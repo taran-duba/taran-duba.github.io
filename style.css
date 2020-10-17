@@ -1,0 +1,63 @@
+body{
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(20,139,255,1) 35%, rgba(0,255,89,1) 100%);
+  text-align: center;
+  color: white;
+  font-family: Cambria, Cochin, Times, 'Times New Roman', sans, serif;
+}
+h1 {
+  text-shadow: 2px 2px #F8BBDO;
+}
+.line {
+    height: 6px;
+    background-color: #ffffff;
+    width: 70px;
+    margin: 8px auto;
+}
+img {
+  width: 20%;
+  height: 40%;
+  border-radius: 20%
+}
+.menu {
+    list-style: none;
+    font-family: cursive;
+    float: right;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+    color: black;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+.liner {
+    height: 6px;
+    background-color: #ffffff;
+    width: 500px;
+    margin: 8px auto;
+}
