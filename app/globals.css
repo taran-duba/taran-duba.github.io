@@ -1,0 +1,303 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Design tokens
+   Light is the default. Dark applies when the user picks it, or when the
+   system prefers dark and no explicit choice is stored.
+   Note: --muted is #5b616a (brief said #646a73) so it clears WCAG AA
+   on --surface (4.88:1) as well as --paper (5.45:1).
+------------------------------------------------------------------- */
+:root {
+  --paper: #f4efe6;
+  --surface: #e9e3d6;
+  --ink: #16202e;
+  --muted: #5b616a;
+  --line: #d9d3c5;
+  --accent: #1b5e9b;
+  --accent-soft: #d6e6f2;
+  --accent-on-dark: #8fc3ee;
+
+  /* High-contrast band: deep ink in light theme */
+  --band-bg: var(--ink);
+  --band-fg: var(--paper);
+  --band-muted: #a7afb9;
+  --band-line: #2c3747;
+  --band-accent: var(--accent-on-dark);
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0e1520;
+    --surface: #17212f;
+    --ink: #f2ede3;
+    --muted: #9aa3ae;
+    --line: #243042;
+    --accent: #6fb0e8;
+    --accent-soft: #18324a;
+    --accent-on-dark: #9cc9f0;
+    --band-bg: var(--surface);
+    --band-fg: var(--ink);
+    --band-muted: var(--muted);
+    --band-line: #2a3749;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper: #0e1520;
+  --surface: #17212f;
+  --ink: #f2ede3;
+  --muted: #9aa3ae;
+  --line: #243042;
+  --accent: #6fb0e8;
+  --accent-soft: #18324a;
+  --accent-on-dark: #9cc9f0;
+  --band-bg: var(--surface);
+  --band-fg: var(--ink);
+  --band-muted: var(--muted);
+  --band-line: #2a3749;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-on-dark: var(--accent-on-dark);
+  --color-band: var(--band-bg);
+  --color-band-fg: var(--band-fg);
+  --color-band-muted: var(--band-muted);
+  --color-band-line: var(--band-line);
+  --color-band-accent: var(--band-accent);
+
+  --font-display: var(--font-young-serif), "Iowan Old Style", Georgia, serif;
+  --font-sans: var(--font-schibsted), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-fragment-mono), ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Fluid type scale */
+  --text-hero: clamp(3.5rem, 1rem + 10vw, 9rem);
+  --text-hero--line-height: 0.95;
+  --text-h2: clamp(2.5rem, 1.6rem + 2.6vw, 4rem);
+  --text-h2--line-height: 1.05;
+  --text-h3: clamp(1.625rem, 1.2rem + 1.2vw, 2.25rem);
+  --text-h3--line-height: 1.15;
+  --text-lede: clamp(1.25rem, 1.05rem + 0.6vw, 1.5rem);
+  --text-lede--line-height: 1.45;
+  --text-body: clamp(1.0625rem, 1rem + 0.2vw, 1.1875rem);
+  --text-body--line-height: 1.6;
+  --text-stat: clamp(3rem, 2rem + 3.2vw, 5.25rem);
+  --text-stat--line-height: 1;
+  --text-label: 0.75rem;
+  --text-label--line-height: 1.4;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ------------------------------------------------------------------
+   Base
+------------------------------------------------------------------- */
+@layer base {
+  html {
+    background: var(--paper);
+    color: var(--ink);
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: var(--text-body);
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "kern";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+
+  p,
+  li,
+  dd {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--accent-soft);
+    color: var(--ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .band :focus-visible {
+    outline-color: var(--band-accent);
+  }
+}
+
+/* ------------------------------------------------------------------
+   Utilities
+------------------------------------------------------------------- */
+@utility container-page {
+  width: 100%;
+  max-width: 75rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  @media (width >= 48rem) {
+    padding-inline: 2.5rem;
+  }
+}
+
+@utility label {
+  font-family: var(--font-mono);
+  font-size: var(--text-label);
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+}
+
+@utility measure {
+  max-width: 65ch;
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* Animated underline for text links */
+@utility link-underline {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition:
+    background-size 320ms var(--ease-out-soft),
+    color 200ms ease;
+  &:hover {
+    color: var(--accent);
+    background-image: linear-gradient(var(--accent), var(--accent));
+  }
+}
+
+@utility link-reveal {
+  text-decoration: none;
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-size: 0% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition:
+    background-size 320ms var(--ease-out-soft),
+    color 200ms ease;
+  &:hover,
+  &:focus-visible {
+    background-size: 100% 1px;
+    color: var(--accent);
+  }
+}
+
+/* ------------------------------------------------------------------
+   Motion
+   Content is only hidden for reveal when JS is running (html.js) and
+   the user has not asked for reduced motion.
+------------------------------------------------------------------- */
+@media (prefers-reduced-motion: no-preference) {
+  .js [data-reveal] {
+    opacity: 0;
+    transform: translateY(14px);
+    transition:
+      opacity 560ms var(--ease-out-soft),
+      transform 560ms var(--ease-out-soft);
+    transition-delay: calc(var(--reveal-index, 0) * 80ms);
+  }
+  .js [data-reveal][data-visible="true"] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-line {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: hero-in 720ms var(--ease-out-soft) forwards;
+    animation-delay: calc(120ms + var(--line, 0) * 140ms);
+  }
+}
+
+@keyframes hero-in {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* Placeholder marker for TODO content (development / preview only) */
+.todo-mark {
+  font-family: var(--font-mono);
+  font-size: 0.75em;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  border-bottom: 1px dotted currentColor;
+  white-space: normal;
+}
+
+/* Theme toggle icon: show the moon in light theme (switch to dark), the sun in dark */
+.theme-toggle .icon-sun {
+  display: none;
+}
+:root[data-theme="dark"] .theme-toggle .icon-sun {
+  display: block;
+}
+:root[data-theme="dark"] .theme-toggle .icon-moon {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun {
+    display: block;
+  }
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon {
+    display: none;
+  }
+}
+
+.placeholder-grid {
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 32px 32px;
+  background-position: -1px -1px;
+  opacity: 0.7;
+}
