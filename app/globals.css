@@ -241,7 +241,7 @@
     opacity: 0;
     transform: translateY(12px);
     animation: hero-in 720ms var(--ease-out-soft) forwards;
-    animation-delay: calc(120ms + var(--line, 0) * 140ms);
+    animation-delay: calc(120ms + var(--hero-i, 0) * 140ms);
   }
 }
 
@@ -300,4 +300,7 @@
   background-size: 32px 32px;
   background-position: -1px -1px;
   opacity: 0.7;
+}
+.band .todo-mark {
+  color: var(--band-muted);
 }

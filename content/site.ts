@@ -61,7 +61,8 @@ export const stats: Stat[] = [
 
 export const about = {
   paragraphs: [
-    "I’m Taran. Most of my time goes into two things: teaching Python and writing code for robots.",
+    // The first paragraph is the large section heading. Keep it short.
+    "I teach Python and write code for robots.",
     "Paid coding classes cost money a lot of students don’t have. I founded Byte-Sized Python, a 501(c)(3) nonprofit, so that cost doesn’t decide who gets to learn. As president and tech lead I run the program and build the software it runs on. We’ve taught more than 200 students around the world, and the tools we built for lower-end hardware have reached more than 330.",
     "On Yeti Robotics (FRC Team 3506) I lead a 15-person programming subteam. Robot code is software with a very honest test: the vision pipeline and the PID loops are either right on the field or they aren’t. That habit of checking work against the real world is what I bring back to the tools I build for students.",
   ],
