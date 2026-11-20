@@ -1,4 +1,4 @@
-# TODO: content Taran needs to supply
+# TODO: content Taran still needs to supply
 
 Every placeholder on the site is the literal string `TODO` (often `TODO: hint`) in a file under `content/`.
 In `npm run dev` each one shows as a small dotted mono tag. In the production build they are hidden, so
@@ -10,82 +10,79 @@ To find them all at any time:
 grep -n "TODO" content/*.ts
 ```
 
-## Identity and contact (`content/site.ts`)
+Filled in from the resume (v6) and public repos: school, class year, email, GitHub, LinkedIn, BSP and
+YETI timeframes and details, sim-sandbox, Polar Edge, Clairify, Permafrost, Lineweave, leadership rows,
+and most honors.
+
+## Resume PDF (`content/site.ts`, `public/resume.pdf`)
+
+Both resume buttons are hidden until this is done.
+
+1. In Word, open `Taran_Duba_v6.docx` and choose File, Save As, PDF.
+2. Save it over `public/resume.pdf`.
+3. In `content/site.ts`, set `resumePath` to `"/resume.pdf"`.
+
+## Identity (`content/site.ts`)
 
 | Field | What is needed |
 | --- | --- |
-| `siteConfig.school` | School name. Shown in the hero status line and the About facts list. |
-| `siteConfig.gradYear` | Graduation year, e.g. `2028`. Shown as "Class of 2028". |
-| `siteConfig.email` | Public email address. Powers the Email link in the hero and the large link in Contact. |
-| `siteConfig.github` | Full GitHub profile URL. |
-| `siteConfig.linkedin` | Full LinkedIn profile URL. |
 | `siteConfig.headshot.src` | Headshot path, e.g. `/images/headshot.webp` (portrait, about 800x1000, WebP). Until set, the hero shows a "TD." monogram. |
 | `about.outsideOfCode.items[].detail` | One specific detail each for Cars, Fashion and style, Music. |
 
-Also review the three `about.paragraphs`. They were written only from the facts provided, but the
-voice should be yours. Change anything that doesn't sound like you.
+Also review the `about.paragraphs` for voice.
 
-## Files in `public/`
+## Images (`public/images/projects/`)
 
-| File | What is needed |
-| --- | --- |
-| `public/resume.pdf` | Real resume. The current file is a one-line placeholder. |
-| `public/images/projects/*` | Screenshots and photos for every project (see below). |
+Screenshots or photos for every project cover, both case study diagrams, and the four case study
+gallery slots. Sizes are in the README. Each slot's `src` in `content/projects.ts` is `TODO` until set.
 
 ## Byte-Sized Python case study (`content/projects.ts`, slug `byte-sized-python`)
 
 | Field | What is needed |
 | --- | --- |
-| `timeframe` | Founding year, e.g. `2023 to present`. |
+| `timeframe` | Set to `2025 to present` from the resume. Change it if BSP started earlier than the summer 2025 course. |
 | `caseStudy.problem.paragraphs[1]` | Founding story: when and why you started BSP, two or three sentences. |
-| `caseStudy.built.paragraphs[1]` | Officer team size and how the team is organized. |
+| `caseStudy.built.paragraphs[2]` | Officer team size and how the team is organized. |
 | `caseStudy.built.bullets` Koda Live | One line on what Koda Live does. |
 | `caseStudy.built.bullets` BSP Stats | What the dashboard tracks. |
 | `caseStudy.built.bullets` Chapter Starter Kit | What the kit includes and who it is for. |
-| `caseStudy.results.paragraphs` | Any verifiable outcome beyond reach numbers (completion, chapters started). |
 | `caseStudy.learned.paragraphs` | Two or three sentences on what running BSP has taught you. |
-| `cover.src`, `howItWorks.diagram.src`, `gallery[].src` | Cover screenshot, a simple diagram of the student path, two gallery screenshots (Koda Studio with tutor, BSP Stats). |
 
-## Yeti Robotics case study (`content/projects.ts`, slug `yeti-robotics`)
+## YETI Robotics case study (`content/projects.ts`, slug `yeti-robotics`)
 
 | Field | What is needed |
 | --- | --- |
-| `timeframe` | Years on the team. |
-| `links` | Any public links (team site, repo, match video). Currently none. |
 | `caseStudy.built.bullets` AprilTag vision | Which you chose (PhotonVision or Limelight) and why. |
 | `caseStudy.built.bullets` Brownout prevention | The approach (current limits, load shedding, etc.). |
-| `caseStudy.howItWorks.paragraphs` | Confirm the localization description (AprilTag pose fused with odometry via Kalman filter) matches what the robot actually does. |
+| `caseStudy.howItWorks.paragraphs` | Confirm the description (pose fused with odometry via Kalman filter, then used to aim and pick flywheel speed) matches the robot. |
 | `caseStudy.learned.paragraphs` | Two or three sentences on what leading the subteam taught you. |
-| `cover.src`, `howItWorks.diagram.src`, `gallery[].src` | Robot photo, localization pipeline diagram, two gallery images. |
 
 ## Other projects (`content/projects.ts`)
 
 | Project | Fields | What is needed |
 | --- | --- | --- |
-| Aid Compass | `role`, `timeframe`, `href`, `cover.src` | Your role on the team of four, the year and challenge outcome, a live or repo link, a screenshot. |
-| Shadowline | `role`, `timeframe`, `href`, `cover.src` | Your role, hackathon name, date and result, a demo or repo link, a screenshot. |
-| sim-sandbox | `timeframe`, `href`, `cover.src` | Year, GitHub repo URL, a screenshot. |
-| Koda Studio and BSP tools | `timeframe`, `cover.src` | Year, a screenshot. |
-| Permafrost | `summary`, `timeframe`, `href`, `cover.src` | One line on what it does and who uses it, year, link, screenshot. |
-| Lineweave | `summary`, `timeframe`, `href`, `cover.src` | One line on what it does and who uses it, year, link, screenshot. |
+| Aid Compass | `role`, `timeframe`, `href` | Your role on the team of four, the year and challenge outcome, a live or repo link. |
+| Shadowline | `role`, `timeframe`, `href` | Your role, hackathon name, date and result, a demo or repo link. |
+| Koda Studio and BSP tools | `timeframe` | Year. |
 
 ## Leadership (`content/experience.ts`)
 
 | Entry | Field | What is needed |
 | --- | --- | --- |
-| Byte-Sized Python | `years` | Start year. |
-| Yeti Robotics | `years` | Years on the team. |
-| FIRST LEGO League | `years` | Years volunteering. |
-| Fourth row | `role`, `organization`, `years`, `lines` | Any other activity worth listing, or delete the row. |
+| FIRST LEGO League (counselor, field coordinator, referee) | `years` | Years volunteering. |
 
 ## Honors (`content/honors.ts`)
 
 | Entry | Field | What is needed |
 | --- | --- | --- |
-| District championship titles | `year` | The two years. |
 | Engineering Inspiration Award | `year` | Year. |
+| District championship titles | `year` | The two years. |
 | Innovation in Controls Award | `year` | Year, and the district event name if you want it in `context`. |
-| Last row | `award`, `level`, `year` | Any individual honors, or delete the row. |
+| FPSPI 2nd place, International Conference | `year` | Year. |
+| FPSPI 2nd place, NC State (Elementary) | `year` | Year. |
+
+Check: the Science Olympiad Experimental Design result is labeled `Team` because it is a partner event.
+Change `holder` to `Individual` if that is wrong.
 
 ## Optional
 

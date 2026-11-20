@@ -120,9 +120,13 @@ export function Hero() {
               <ButtonLink href="/#projects" variant="solid">
                 See projects <Arrow />
               </ButtonLink>
-              <ButtonLink href={siteConfig.resumePath} variant="outline">
-                Resume <span className="label text-muted">PDF</span>
-              </ButtonLink>
+              {hasValue(siteConfig.resumePath) ? (
+                <ButtonLink href={siteConfig.resumePath} variant="outline">
+                  Resume <span className="label text-muted">PDF</span>
+                </ButtonLink>
+              ) : (
+                <TodoMark hint="resume PDF" />
+              )}
             </div>
             <div className="mt-6">
               <ContactLinks />

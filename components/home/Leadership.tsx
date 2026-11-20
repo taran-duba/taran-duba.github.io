@@ -8,7 +8,7 @@ import { hasValue, showTodos } from "@/lib/todo";
 export function Leadership() {
   const rows = experience.filter((e) => hasValue(e.organization) || showTodos);
   return (
-    <Section id="leadership" number="03" label="Leadership" title="Leadership and service">
+    <Section id="leadership" number="03" label="Leadership" title="Leadership and experience">
       <ol className="border-b border-line">
         {rows.map((e, i) => (
           <Reveal as="li" key={i} index={i} className="grid gap-3 border-t border-line py-8 md:grid-cols-9 md:gap-8">

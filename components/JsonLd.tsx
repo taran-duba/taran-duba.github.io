@@ -14,7 +14,7 @@ export function PersonJsonLd() {
     address: { "@type": "PostalAddress", addressLocality: "Charlotte", addressRegion: "NC", addressCountry: "US" },
     jobTitle: "Founder and President, Byte-Sized Python",
     worksFor: { "@type": "Organization", name: "Byte-Sized Python", url: "https://bytesizedpython.org" },
-    memberOf: { "@type": "SportsTeam", name: "Yeti Robotics, FRC Team 3506" },
+    memberOf: { "@type": "SportsTeam", name: "YETI Robotics, FRC Team 3506" },
     sameAs,
   };
   if (hasValue(siteConfig.email)) data.email = `mailto:${siteConfig.email}`;

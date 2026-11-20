@@ -27,9 +27,13 @@ export function Contact() {
       </div>
 
       <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
-        <ButtonLink href={siteConfig.resumePath} variant="band">
-          Download resume <span className="label">PDF</span>
-        </ButtonLink>
+        {hasValue(siteConfig.resumePath) ? (
+          <ButtonLink href={siteConfig.resumePath} variant="band">
+            Download resume <span className="label">PDF</span>
+          </ButtonLink>
+        ) : (
+          <TodoMark hint="resume PDF (siteConfig.resumePath)" />
+        )}
         {socials.map((s) =>
           hasValue(s.href) ? (
             <TextLink key={s.label} href={s.href} className="text-band-fg hover:!text-band-accent">

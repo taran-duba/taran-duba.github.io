@@ -23,21 +23,25 @@ export const siteConfig = {
   descriptor: "Founder of Byte-Sized Python. Programming lead for FRC Team 3506.",
   /** Two sentence hero intro. */
   intro:
-    "I’m a high school student in Charlotte, North Carolina. I started a nonprofit that teaches Python to students who can’t pay for classes, and I lead the programming subteam on Yeti Robotics.",
+    "I’m a high school student in Charlotte, North Carolina. I started a nonprofit that teaches Python to students who can’t pay for classes, and I lead the programming subteam on YETI Robotics.",
   metaDescription:
     "Taran Duba is a high school student in Charlotte, NC. He founded Byte-Sized Python, a 501(c)(3) teaching Python to students who can’t afford paid classes, and leads programming for FRC Team 3506.",
 
   location: "Charlotte, NC",
-  school: "TODO: school name",
-  gradYear: "TODO: graduation year",
+  school: "Providence High School",
+  gradYear: "2028",
 
-  email: "TODO: public email address",
-  github: "TODO: GitHub profile URL",
-  linkedin: "TODO: LinkedIn profile URL",
+  email: "taran.duba3@gmail.com",
+  github: "https://github.com/taran-duba",
+  linkedin: "https://www.linkedin.com/in/taran-duba/",
 
   /** Absolute origin of the deployed site, including any base path. Set NEXT_PUBLIC_SITE_URL in CI. */
   siteUrl: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://taran-duba.github.io").replace(/\/$/, ""),
-  resumePath: "/resume.pdf",
+  /**
+   * Resume button target. While this is "TODO", both resume buttons are hidden.
+   * Export the resume from Word as public/resume.pdf, then set this to "/resume.pdf".
+   */
+  resumePath: "TODO: export the resume to public/resume.pdf, then set this to /resume.pdf",
   ogImagePath: "/og.png",
 
   /**
@@ -54,8 +58,8 @@ export const siteConfig = {
 
 export const stats: Stat[] = [
   { value: 200, suffix: "+", label: "students taught Python worldwide", note: "Byte-Sized Python", countUp: true },
-  { value: 330, suffix: "+", label: "students reached by tools built for lower-end hardware", note: "Byte-Sized Python", countUp: true },
-  { value: 140, suffix: "+", label: "volunteer hours with FRC, the most on my team", note: "Yeti Robotics", countUp: true },
+  { value: 330, suffix: "+", label: "students supported by Koda, our AI tutor built for lower-end hardware", note: "Byte-Sized Python", countUp: true },
+  { value: 140, suffix: "+", label: "volunteer hours with FRC, the most on my team", note: "YETI Robotics", countUp: true },
   { value: 2026, label: "FIRST World Championship, Hopper Division title", note: "Team result, FRC 3506", countUp: false },
 ];
 
@@ -63,8 +67,9 @@ export const about = {
   paragraphs: [
     // The first paragraph is the large section heading. Keep it short.
     "I teach Python and write code for robots.",
-    "Paid coding classes cost money a lot of students don’t have. I founded Byte-Sized Python, a 501(c)(3) nonprofit, so that cost doesn’t decide who gets to learn. As president and tech lead I run the program and build the software it runs on. We’ve taught more than 200 students around the world, and the tools we built for lower-end hardware have reached more than 330.",
-    "On Yeti Robotics (FRC Team 3506) I lead a 15-person programming subteam. Robot code is software with a very honest test: the vision pipeline and the PID loops are either right on the field or they aren’t. That habit of checking work against the real world is what I bring back to the tools I build for students.",
+    "Paid coding classes cost money a lot of students don’t have. I founded Byte-Sized Python, a 501(c)(3) nonprofit, so that cost doesn’t decide who gets to learn. In summer 2025 I designed and taught a five-day course with more than 40 exercises to over 70 students. Across Charlotte and abroad we’ve now taught more than 200, and Koda, the AI tutor we built for lower-end hardware, has supported more than 330.",
+    "On YETI Robotics (FRC Team 3506) I lead a 15-person programming subteam and have written Java for every subsystem on the robot, from shooter flywheels to articulated arms. Our autonomous routines added about 50 points a match, part of how the team won two district championships and its division at the 2026 FIRST World Championship.",
+    "I’m in the Class of 2028 at Providence High School. The areas I want to go deeper in are AI, robotics, and data science, and I’m looking for research and internship work in them.",
   ],
   outsideOfCode: {
     intro: "Outside of code",
