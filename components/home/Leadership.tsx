@@ -13,7 +13,7 @@ export function Leadership() {
         {rows.map((e, i) => (
           <Reveal as="li" key={i} index={i} className="grid gap-3 border-t border-line py-8 md:grid-cols-9 md:gap-8">
             <p className="label tabular pt-1.5 uppercase text-muted md:col-span-2">
-              <Text value={e.years} fallback="Present" />
+              <Text value={e.years} />
             </p>
             <div className="md:col-span-7">
               <h3 className="font-display text-2xl text-ink md:text-[1.75rem]">

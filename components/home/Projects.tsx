@@ -6,7 +6,7 @@ import { Figure } from "@/components/Figure";
 import { Tags } from "@/components/Tags";
 import { Text, TodoMark } from "@/components/Todo";
 import { Arrow, ArrowUpRight } from "@/components/Links";
-import { isTodo, showTodos } from "@/lib/todo";
+import { isRenderable, isTodo, showTodos } from "@/lib/todo";
 
 function FeaturedCard({ project, index }: { project: Project; index: number }) {
   const flip = index % 2 === 1;
@@ -33,8 +33,12 @@ function FeaturedCard({ project, index }: { project: Project; index: number }) {
           <p className="mt-4 text-ink">{project.summary}</p>
           <p className="label mt-5 text-muted">
             {project.role}
-            <span aria-hidden="true"> / </span>
-            <Text value={project.timeframe} fallback="Ongoing" />
+            {isRenderable(project.timeframe) && (
+              <>
+                <span aria-hidden="true"> / </span>
+                <Text value={project.timeframe} />
+              </>
+            )}
           </p>
           <Tags tags={project.tags} className="mt-5" />
           <p className="mt-7 inline-flex items-center gap-2 text-[0.9375rem] font-medium text-accent">

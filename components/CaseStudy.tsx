@@ -129,12 +129,14 @@ export function CaseStudyView({ project, next }: { project: Project; next: Proje
             <dt className="label uppercase text-muted">Role</dt>
             <dd className="mt-2 text-ink">{project.role}</dd>
           </div>
-          <div>
-            <dt className="label uppercase text-muted">Timeframe</dt>
-            <dd className="mt-2 text-ink">
-              <Text value={project.timeframe} fallback="Ongoing" />
-            </dd>
-          </div>
+          {isRenderable(project.timeframe) && (
+            <div>
+              <dt className="label uppercase text-muted">Timeframe</dt>
+              <dd className="mt-2 text-ink">
+                <Text value={project.timeframe} />
+              </dd>
+            </div>
+          )}
           <div>
             <dt className="label uppercase text-muted">Tags</dt>
             <dd className="mt-2">
