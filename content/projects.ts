@@ -284,8 +284,8 @@ export const projects: Project[] = [
     href: "TODO: live site or repo URL",
   },
   {
-    slug: "shadowline",
-    title: "Shadowline",
+    slug: "lunaris360",
+    title: "Lunaris360",
     kind: "Team hackathon project",
     summary: "Lunar south pole mission planning in the browser, with Story Mode for learners and Mission Control for experts.",
     role: "TODO: your role",
@@ -293,7 +293,7 @@ export const projects: Project[] = [
     tags: ["Web app", "Hackathon", "Space"],
     links: [],
     featured: false,
-    cover: cover("Shadowline", "Shadowline mission planning view of the lunar south pole"),
+    cover: cover("Lunaris360", "Lunaris360 mission planning view of the lunar south pole"),
     href: "TODO: demo or repo URL",
   },
   {

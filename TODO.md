@@ -62,7 +62,7 @@ gallery slots. Sizes are in the README. Each slot's `src` in `content/projects.t
 | Project | Fields | What is needed |
 | --- | --- | --- |
 | Aid Compass | `role`, `timeframe`, `href` | Your role on the team of four, the year and challenge outcome, a live or repo link. |
-| Shadowline | `role`, `timeframe`, `href` | Your role, hackathon name, date and result, a demo or repo link. |
+| Lunaris360 (formerly Shadowline) | `role`, `timeframe`, `href` | Your role, hackathon name, date and result, a demo or repo link. |
 | Koda Studio and BSP tools | `timeframe` | Year. |
 
 ## Leadership (`content/experience.ts`)
