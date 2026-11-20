@@ -1,0 +1,17 @@
+# deps / build
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# env
+.env*
+!.env.example
+
+# local tooling
+.DS_Store
+.idea/
+.claude-flow/
+.vscode/
+npm-debug.log*
