@@ -19,7 +19,6 @@ export function CountUp({ value, duration = 1400 }: { value: number; duration?: 
     const rect = el.getBoundingClientRect();
     if (rect.top < window.innerHeight && rect.bottom > 0) return;
 
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     setDisplay(0);
     let raf = 0;
     const io = new IntersectionObserver(
