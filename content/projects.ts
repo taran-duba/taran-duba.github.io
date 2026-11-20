@@ -172,7 +172,7 @@ export const projects: Project[] = [
         },
       },
       results: {
-        paragraphs: ["These are team results. Every subteam on Yeti Robotics contributed to them."],
+        paragraphs: ["Titles and awards are team results. Every subteam on Yeti Robotics contributed to them."],
         metrics: [
           { value: "2026", label: "FIRST World Championship, Hopper Division title", note: "Team" },
           { value: "2", label: "district championship titles", note: "Team" },

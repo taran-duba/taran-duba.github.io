@@ -32,3 +32,8 @@ export function splitTodo(value: string): { text: string; hint: string | null } 
   if (i === -1) return { text: value, hint: null };
   return { text: value.slice(0, i).trim(), hint: todoHint(value.slice(i)) };
 }
+
+/** Whether a string has anything to show: real text, or a placeholder while TODOs are visible. */
+export function isRenderable(value: string): boolean {
+  return showTodos || splitTodo(value).text !== "";
+}

@@ -27,8 +27,6 @@ const mono = Fragment_Mono({
   display: "swap",
 });
 
-const ogImage = `${siteConfig.siteUrl}${siteConfig.ogImagePath}`;
-
 export const metadata: Metadata = {
   metadataBase: new URL(`${siteConfig.siteUrl}/`),
   title: {
@@ -45,16 +43,6 @@ export const metadata: Metadata = {
       { url: withBase("/icon.svg"), type: "image/svg+xml" },
     ],
     apple: withBase("/apple-touch-icon.png"),
-  },
-  openGraph: {
-    type: "website",
-    siteName: siteConfig.name,
-    locale: "en_US",
-    images: [{ url: ogImage, width: 1200, height: 630, alt: `${siteConfig.name}: ${siteConfig.descriptor}` }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    images: [ogImage],
   },
   robots: { index: true, follow: true },
 };
