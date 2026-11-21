@@ -115,8 +115,8 @@ export function CaseStudyView({ project, next }: { project: Project; next: Proje
   return (
     <article>
       <header className="container-page pt-12 md:pt-20">
-        <Link href="/#projects" className="label inline-flex items-center gap-2 uppercase text-muted transition-colors hover:text-accent">
-          <Arrow className="rotate-180" /> All projects
+        <Link href="/#work" className="label inline-flex items-center gap-2 uppercase text-muted transition-colors hover:text-accent">
+          <Arrow className="rotate-180" /> Back to work
         </Link>
         <p className="label mt-12 uppercase text-accent md:mt-16">{project.kind}</p>
         <h1 className="mt-4 max-w-[14ch] font-display text-[clamp(3rem,1.5rem+5vw,6.5rem)] leading-[0.98] tracking-[-0.025em] text-ink">

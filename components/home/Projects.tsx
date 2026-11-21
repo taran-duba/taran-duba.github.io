@@ -111,7 +111,8 @@ function GridCard({ project, index }: { project: Project; index: number }) {
 
 export function Projects() {
   return (
-    <Section id="projects" number="02" label="Projects" title="Selected work">
+    <Section id="work" number="02" label="Work" title="Selected work">
+      <h3 className="label mb-10 uppercase text-muted">Organizations I lead</h3>
       <div className="space-y-20 md:space-y-28">
         {featuredProjects.map((p, i) => (
           <FeaturedCard key={p.slug} project={p} index={i} />

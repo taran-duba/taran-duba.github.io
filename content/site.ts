@@ -82,7 +82,7 @@ export const about = {
 
 export const navLinks = [
   { href: "/#about", id: "about", label: "About" },
-  { href: "/#projects", id: "projects", label: "Projects" },
+  { href: "/#work", id: "work", label: "Work" },
   { href: "/#leadership", id: "leadership", label: "Leadership" },
   { href: "/#honors", id: "honors", label: "Honors" },
   { href: "/#contact", id: "contact", label: "Contact" },

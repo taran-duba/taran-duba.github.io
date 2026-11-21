@@ -117,8 +117,8 @@ export function Hero() {
           <div className="md:col-span-6 md:col-start-7">
             <p className="measure text-muted">{siteConfig.intro}</p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <ButtonLink href="/#projects" variant="solid">
-                See projects <Arrow />
+              <ButtonLink href="/#work" variant="solid">
+                See my work <Arrow />
               </ButtonLink>
               {hasValue(siteConfig.resumePath) ? (
                 <ButtonLink href={siteConfig.resumePath} variant="outline">
