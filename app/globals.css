@@ -304,3 +304,22 @@
 .band .todo-mark {
   color: var(--band-muted);
 }
+
+/* Theme-specific image pairs: show the dark one only in dark theme */
+.img-dark {
+  display: none;
+}
+:root[data-theme="dark"] .img-dark {
+  display: block;
+}
+:root[data-theme="dark"] .img-light:not(.img-both) {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .img-dark {
+    display: block;
+  }
+  :root:not([data-theme="light"]) .img-light:not(.img-both) {
+    display: none;
+  }
+}

@@ -39,7 +39,6 @@ local no-login mode). Still missing, each `src` is `TODO` in `content/projects.t
 
 - One YETI Robotics gallery photo: the second slot is a sim-sandbox PID tuning capture. The YETI photos are about 650px wide, so larger originals would look sharper.
 - sim-sandbox cover (needs a screen capture of the simulator running on your machine).
-- Both case study diagrams.
 
 ## Byte-Sized Python case study
 

@@ -14,6 +14,8 @@ export type ImageSlot = {
   height: number;
   /** Shown under the image, and inside the placeholder while src is TODO. */
   caption: string;
+  /** Optional dark theme version of the same image. */
+  darkSrc?: string;
 };
 
 export type ProjectLink = { label: string; href: string };
@@ -117,11 +119,12 @@ export const projects: Project[] = [
           { term: "Title I schools", detail: "Outreach to Charlotte-Mecklenburg Schools Title I summer camps, and an expansion into Title I schools that adds robotics and AI literacy." },
         ],
         diagram: {
-          src: "TODO: diagram image",
-          alt: "Diagram of how a student moves through Byte-Sized Python",
+          src: "/images/projects/bsp-flow-light.webp",
+          darkSrc: "/images/projects/bsp-flow-dark.webp",
+          alt: "Diagram. Students move from the curriculum (20 sessions across 6 units) to Koda Studio, where they code in the browser, then to Koda Live, where a teacher runs a session and students join with a six-character code. The Koda AI tutor gives feedback in both tools. The program reaches students through our own classes, peer-led chapters launched with the Chapter Starter Kit, and local partners (HTI x AA8 in rural NC, and Title I schools).",
           width: 1600,
           height: 900,
-          caption: "Diagram: student path from first lesson to Koda Studio",
+          caption: "Diagram: how a student learns, and how the program reaches them",
         },
       },
       results: {
@@ -188,11 +191,12 @@ export const projects: Project[] = [
           "I also built sim-sandbox, an open-source template that lets FRC programmers practice PID tuning on mechanisms without a physical robot, hardware, or motors. Separately, I ported MapleSim to the WPILib 2027 alpha 2 release as a template for our team’s internal CADathon challenge.",
         ],
         diagram: {
-          src: "TODO: diagram image",
-          alt: "Diagram of the pipeline from cameras to pose estimate to aiming and flywheel speed",
+          src: "/images/projects/yeti-flow-light.webp",
+          darkSrc: "/images/projects/yeti-flow-dark.webp",
+          alt: "Diagram. Three cameras detect AprilTags on the field, and drivetrain odometry estimates the robot's motion. A Kalman filter combines both into one stable robot pose. The pose feeds auto-alignment, which turns the robot to face the target, and a flywheel lookup map that turns shot distance into flywheel speed.",
           width: 1600,
           height: 900,
-          caption: "Diagram: AprilTag detections and odometry fused into one pose, then used to aim and set flywheel speed",
+          caption: "Diagram: from cameras to a shot",
         },
       },
       results: {

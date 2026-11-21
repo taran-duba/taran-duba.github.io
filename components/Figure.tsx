@@ -35,15 +35,28 @@ export function Figure({
             <span className="label relative text-muted">{image.caption}</span>
           </div>
         ) : (
-          <Image
-            src={withBase(image.src)}
-            alt={image.alt}
-            width={image.width}
-            height={image.height}
-            sizes={sizes}
-            priority={priority}
-            className="h-full w-full object-cover"
-          />
+          <>
+            <Image
+              src={withBase(image.src)}
+              alt={image.alt}
+              width={image.width}
+              height={image.height}
+              sizes={sizes}
+              priority={priority}
+              className={`img-light h-full w-full object-cover ${image.darkSrc ? "" : "img-both"}`}
+            />
+            {image.darkSrc && (
+              <Image
+                src={withBase(image.darkSrc)}
+                alt=""
+                aria-hidden="true"
+                width={image.width}
+                height={image.height}
+                sizes={sizes}
+                className="img-dark h-full w-full object-cover"
+              />
+            )}
+          </>
         )}
       </div>
       {showCaption && !missing && (
