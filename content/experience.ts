@@ -43,7 +43,7 @@ export const experience: Experience[] = [
   {
     role: "Camp Counselor, Field Coordinator, and Referee",
     organization: "FIRST LEGO League",
-    years: "TODO: years",
+    years: "2024 to present",
     lines: [
       "Mentored 10+ students in grades 3 to 8 to design, build, and program SPIKE Prime robots for FLL competitions.",
       "Field coordinator and referee at North Carolina robotics competitions with 75+ teams and 600+ students.",

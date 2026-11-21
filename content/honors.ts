@@ -57,14 +57,14 @@ export const honors: Honor[] = [
     award: "2nd place, International Conference",
     holder: "Team",
     level: "International",
-    year: "TODO: year",
+    year: "2023",
     context: "Future Problem Solving Program International, Global Issues Problem Solving",
   },
   {
     award: "2nd place, NC State Tournament (Elementary)",
     holder: "Team",
     level: "State",
-    year: "TODO: year",
+    year: "2023",
     context: "Future Problem Solving Program International",
   },
   {

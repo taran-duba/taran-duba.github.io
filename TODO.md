@@ -64,23 +64,6 @@ gallery slots. Sizes are in the README. Each slot's `src` in `content/projects.t
 | Lunaris360 (formerly Shadowline) | `href` | A demo or repo link. Add any placement to `timeframe` or `summary`. |
 | Koda Studio and BSP tools | `timeframe` | Year. |
 
-## Leadership (`content/experience.ts`)
-
-| Entry | Field | What is needed |
-| --- | --- | --- |
-| FIRST LEGO League (counselor, field coordinator, referee) | `years` | Years volunteering. |
-
-## Honors (`content/honors.ts`)
-
-| Entry | Field | What is needed |
-| --- | --- | --- |
-| Innovation in Controls Award | `context` | Optional: the district event name. |
-| FPSPI 2nd place, International Conference | `year` | Year. |
-| FPSPI 2nd place, NC State (Elementary) | `year` | Year. |
-
-Check: the Science Olympiad Experimental Design result is labeled `Team` because it is a partner event.
-Change `holder` to `Individual` if that is wrong.
-
 ## Optional
 
 - Analytics: set `ANALYTICS_PROVIDER` and `ANALYTICS_ID` repo variables (see README).
