@@ -26,7 +26,7 @@ export const experience: Experience[] = [
     organization: "YETI Robotics, FRC Team 3506",
     years: "2024 to present",
     lines: [
-      "Manage both the programming and electrical teams. Lead a 15-person programming subteam and write Java for every robot subsystem, plus vision, auto-alignment, and localization.",
+      "Lead a 30-person team across programming and electrical. Write Java for every robot subsystem, plus vision, auto-alignment, and localization.",
       "600+ hours a year. First on the team in community volunteering, with 140+ hours.",
     ],
     href: "/projects/yeti-robotics/",

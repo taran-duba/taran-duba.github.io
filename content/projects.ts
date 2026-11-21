@@ -134,7 +134,7 @@ export const projects: Project[] = [
     slug: "yeti-robotics",
     title: "YETI Robotics Controls Team",
     kind: "FRC Team 3506",
-    summary: "Managing programming and electrical, and leading a 30-person subteam on a team that won its division at the 2026 FIRST World Championship.",
+    summary: "Managing programming and electrical, and leading a 30-person team on a squad that won its division at the 2026 FIRST World Championship.",
     role: "Controls Manager (programming and electrical)",
     timeframe: "Fall 2024 to present",
     tags: ["FRC", "Java", "WPILib", "Computer vision", "Controls", "Electrical"],
@@ -149,7 +149,7 @@ export const projects: Project[] = [
       problem: {
         paragraphs: [
           "An FRC robot has to know where it is on the field, aim and shoot accurately from anywhere, and keep doing all of it through a full match without its battery voltage sagging into a brownout.",
-          "As controls manager, I run both programming and electrical, and I lead the 15-person programming subteam, so the work is as much about splitting problems up and reviewing code as writing it. Build season runs more than 21 hours a week, and I put in over 600 hours a year alongside a full course load.",
+          "As controls manager, I lead a 30-person team across programming and electrical, so the work is as much about splitting problems up and reviewing code as writing it. Build season runs more than 21 hours a week, and I put in over 600 hours a year alongside a full course load.",
         ],
       },
       built: {
