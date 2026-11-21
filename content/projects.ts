@@ -62,6 +62,14 @@ const cover = (name: string, alt: string): ImageSlot => ({
   caption: `Screenshot: ${name}`,
 });
 
+const shot = (name: string, alt: string, file: string): ImageSlot => ({
+  src: `/images/projects/${file}`,
+  alt,
+  width: 1600,
+  height: 1000,
+  caption: `Screenshot: ${name}`,
+});
+
 export const projects: Project[] = [
   {
     slug: "byte-sized-python",
@@ -77,7 +85,7 @@ export const projects: Project[] = [
       { label: "Koda Live", href: "https://live.bytesizedpython.org" },
     ],
     featured: true,
-    cover: cover("Byte-Sized Python", "Byte-Sized Python website and Koda Studio"),
+    cover: shot("Byte-Sized Python", "Byte-Sized Python home page with the headline Learn Python one byte at a time", "byte-sized-python.webp"),
     href: "/projects/byte-sized-python/",
     caseStudy: {
       problem: {
@@ -129,7 +137,7 @@ export const projects: Project[] = [
       },
       callout: { text: "Koda, our AI tutor built for lower-end hardware, has supported more than 330 students." },
       gallery: [
-        { src: "TODO: gallery image", alt: "Koda Studio editor with the AI tutor open", width: 1600, height: 1000, caption: "Screenshot: Koda Studio with the AI tutor" },
+        { ...shot("Koda Studio with the AI tutor", "Koda Studio editor running Python, with the Koda AI tutor panel", "koda-studio.webp") },
         { src: "TODO: gallery image", alt: "BSP Stats dashboard", width: 1600, height: 1000, caption: "Screenshot: BSP Stats dashboard" },
       ],
     },
@@ -218,8 +226,21 @@ export const projects: Project[] = [
     tags: ["Open source", "Java", "WPILib", "PID tuning"],
     links: [],
     featured: false,
-    cover: cover("sim-sandbox", "sim-sandbox simulation of an FRC mechanism"),
+    cover: cover("sim-sandbox", "sim-sandbox tuning an FRC mechanism"),
     href: "https://github.com/yeti-robotics/sim-sandbox",
+  },
+  {
+    slug: "fileatlas",
+    title: "FileAtlas",
+    kind: "greenCode Hackathon winner",
+    summary: "Your Google Drive as an interactive node graph, with duplicate file detection, natural language search, and AI-suggested file names. Won greenCode with a team of four.",
+    role: "Lead developer",
+    timeframe: "May 2026",
+    tags: ["Next.js", "TypeScript", "Google Drive API", "OpenAI"],
+    links: [],
+    featured: false,
+    cover: shot("FileAtlas", "FileAtlas node graph showing a project, its folders, and their files", "fileatlas.webp"),
+    href: "https://github.com/tralalero-tech-support/greencode-hack",
   },
   {
     slug: "clairify",
@@ -231,7 +252,7 @@ export const projects: Project[] = [
     tags: ["Gemini API", "NASA data", "Web app"],
     links: [],
     featured: false,
-    cover: cover("Clairify", "Clairify air quality guidance screen"),
+    cover: shot("Clairify", "Clairify home page: Here to help you breathe, clear", "clairify.webp"),
     href: "https://clairify.vercel.app",
   },
   {
@@ -244,7 +265,7 @@ export const projects: Project[] = [
     tags: ["Rust", "Tauri", "React", "SolidWorks"],
     links: [],
     featured: false,
-    cover: cover("Permafrost", "Permafrost interface"),
+    cover: shot("Permafrost", "Permafrost app window listing shared SolidWorks files with check-out status", "permafrost.webp"),
     href: "https://github.com/taran-duba/permafrost",
   },
   {
@@ -257,7 +278,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "Yjs", "Firebase", "Google Drive"],
     links: [],
     featured: false,
-    cover: cover("Lineweave", "Lineweave diagram editor"),
+    cover: shot("Lineweave", "Lineweave diagram editor showing a flowchart in the demo", "lineweave.webp"),
     href: "https://lineweave-weld.vercel.app",
   },
   {
@@ -270,7 +291,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "Tailwind", "Gemini API", "Mapbox GL JS", "Vercel"],
     links: [],
     featured: false,
-    cover: cover("Aid Compass", "Aid Compass map of disaster aid organizations"),
+    cover: shot("Aid Compass", "Aid Compass home page: Find the disaster aid you actually qualify for", "aid-compass.webp"),
     href: "https://cac-2026-murex.vercel.app",
   },
   {
@@ -283,7 +304,7 @@ export const projects: Project[] = [
     tags: ["Web app", "Hackathon", "Space"],
     links: [],
     featured: false,
-    cover: cover("Lunaris360", "Lunaris360 mission planning view of the lunar south pole"),
+    cover: shot("Lunaris360", "Lunaris360 Open Exploration view with a 3D Moon and data layers", "lunaris360.webp"),
     href: "https://lunaris360.earth",
   },
   {
@@ -292,11 +313,11 @@ export const projects: Project[] = [
     kind: "Byte-Sized Python",
     summary: "A browser-based coding environment with the Koda AI tutor, plus Koda Live, BSP Stats, and the Chapter Starter Kit.",
     role: "Tech Lead",
-    timeframe: "TODO: year",
+    timeframe: "2026",
     tags: ["Education", "AI tutor", "Browser IDE"],
     links: [],
     featured: false,
-    cover: cover("Koda Studio", "Koda Studio editor"),
+    cover: shot("Koda Studio", "Koda Studio editor running Python, with the Koda AI tutor panel", "koda-studio.webp"),
     href: "/projects/byte-sized-python/",
   },
 ];

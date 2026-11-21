@@ -32,15 +32,6 @@ export const experience: Experience[] = [
     href: "/projects/yeti-robotics/",
   },
   {
-    role: "Outreach and Advocacy Volunteer",
-    organization: "YETI Robotics, FRC Team 3506",
-    years: "2025 to 2026",
-    lines: [
-      "Led robot demos and outreach reaching 120+ community members, with Wallace Pruitt Recreation Center, LPL Financial, and Big Brothers Big Sisters.",
-      "Lobbied six North Carolina and South Carolina senators and representatives at the U.S. Capitol for STEM funding.",
-    ],
-  },
-  {
     role: "Camp Counselor, Field Coordinator, and Referee",
     organization: "FIRST LEGO League",
     years: "2024 to present",
@@ -59,11 +50,12 @@ export const experience: Experience[] = [
     ],
   },
   {
-    role: "Student Coach",
-    organization: "VEX IQ middle school robotics",
-    years: "2024 to 2025",
+    role: "Outreach and Advocacy Volunteer",
+    organization: "YETI Robotics, FRC Team 3506",
+    years: "2025 to 2026",
     lines: [
-      "Mentored four middle school students on programming and robot design. The team qualified for districts and advanced to the state championship.",
+      "Led robot demos and outreach reaching 120+ community members, with Wallace Pruitt Recreation Center, LPL Financial, and Big Brothers Big Sisters.",
+      "Lobbied six North Carolina and South Carolina senators and representatives at the U.S. Capitol for STEM funding.",
     ],
   },
   {
@@ -73,11 +65,11 @@ export const experience: Experience[] = [
     lines: ["Led workshops for students on responsible and practical uses of AI."],
   },
   {
-    role: "Product Development Intern",
-    organization: "BlackBuck, Bangalore",
-    years: "2023",
+    role: "Student Coach",
+    organization: "VEX IQ middle school robotics",
+    years: "2024 to 2025",
     lines: [
-      "Built a Python API that fills structured form inputs into HTML-templated bank loan documents, speeding up truck financing for drivers and fleet operators.",
+      "Mentored four middle school students on programming and robot design. The team qualified for districts and advanced to the state championship.",
     ],
   },
   {
@@ -85,5 +77,13 @@ export const experience: Experience[] = [
     organization: "Metrolina Regional Scholars Academy",
     years: "2023 to 2024",
     lines: ["Nominated by teachers. Organized school events, hosted campus tours, and welcomed new families."],
+  },
+  {
+    role: "Product Development Intern",
+    organization: "BlackBuck, Bangalore",
+    years: "2023",
+    lines: [
+      "Built a Python API that fills structured form inputs into HTML-templated bank loan documents, speeding up truck financing for drivers and fleet operators.",
+    ],
   },
 ];

@@ -33,8 +33,14 @@ Also review the `about.paragraphs` for voice.
 
 ## Images (`public/images/projects/`)
 
-Screenshots or photos for every project cover, both case study diagrams, and the four case study
-gallery slots. Sizes are in the README. Each slot's `src` in `content/projects.ts` is `TODO` until set.
+Screenshots are in for Byte-Sized Python, Koda Studio, Aid Compass, Lunaris360, FileAtlas, Clairify,
+Permafrost, and Lineweave (taken from the live sites; FileAtlas is a demo project built by hand in the
+local no-login mode). Still missing, each `src` is `TODO` in `content/projects.ts`:
+
+- YETI Robotics cover and its two gallery slots (robot photos).
+- sim-sandbox cover (needs a screen capture of the simulator running on your machine).
+- BSP Stats screenshot for the second Byte-Sized Python gallery slot.
+- Both case study diagrams.
 
 ## Byte-Sized Python case study (`content/projects.ts`, slug `byte-sized-python`)
 
@@ -61,7 +67,6 @@ gallery slots. Sizes are in the README. Each slot's `src` in `content/projects.t
 | Project | Fields | What is needed |
 | --- | --- | --- |
 | Lunaris360 (formerly Shadowline) | `summary` | Optional: add any placement or result. |
-| Koda Studio and BSP tools | `timeframe` | Year. |
 
 ## Optional
 

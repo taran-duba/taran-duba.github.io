@@ -41,6 +41,13 @@ export const honors: Honor[] = [
     context: "District event, YETI Robotics (FRC 3506)",
   },
   {
+    award: "greenCode Hackathon winner",
+    holder: "Team",
+    level: "TODO: level",
+    year: "2026",
+    context: "FileAtlas, a team of four",
+  },
+  {
     award: "Presidential Volunteer Service Award, Gold",
     holder: "Individual",
     level: "National",
@@ -52,6 +59,13 @@ export const honors: Honor[] = [
     level: "Local",
     year: "2025",
     context: "NASA Space Apps Challenge, Charlotte chapter. Won with Clairify, a team formed on-site.",
+  },
+  {
+    award: "10th place, Experimental Design (Div. B)",
+    holder: "Team",
+    level: "State",
+    year: "2024",
+    context: "Science Olympiad, NC State",
   },
   {
     award: "2nd place, International Conference",
@@ -66,12 +80,5 @@ export const honors: Honor[] = [
     level: "State",
     year: "2023",
     context: "Future Problem Solving Program International",
-  },
-  {
-    award: "10th place, Experimental Design (Div. B)",
-    holder: "Team",
-    level: "State",
-    year: "2024",
-    context: "Science Olympiad, NC State",
   },
 ];
