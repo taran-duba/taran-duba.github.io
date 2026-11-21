@@ -107,6 +107,12 @@ export function CaseStudyView({ project, next }: { project: Project; next: Proje
         </>
       ),
     },
+    {
+      id: "community",
+      title: "Leadership and community impact",
+      show: !!cs.community && blockHasContent(cs.community),
+      render: () => <Prose block={cs.community!} />,
+    },
     { id: "learned", title: "What I learned", show: blockHasContent(cs.learned), render: () => <Prose block={cs.learned} /> },
   ];
   const visibleParts = parts.filter((p) => p.show);

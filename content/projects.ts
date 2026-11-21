@@ -32,6 +32,8 @@ export type CaseStudy = {
   built: ProseBlock;
   howItWorks: ProseBlock & { diagram: ImageSlot };
   results: ProseBlock & { metrics: Metric[] };
+  /** Optional "Leadership and community impact" section, shown after Results. */
+  community?: ProseBlock;
   learned: ProseBlock;
   /** Large serif callout placed between sections. Must be a fact, not a slogan. */
   callout: { text: string; attribution?: string };
@@ -77,10 +79,10 @@ export const projects: Project[] = [
     slug: "byte-sized-python",
     title: "Byte-Sized Python",
     kind: "Nonprofit, 501(c)(3)",
-    summary: "A nonprofit that teaches Python to students who can’t afford paid classes, and builds the tools to do it.",
+    summary: "A nonprofit making Python education accessible through free instruction, browser-based coding tools, and an AI tutor designed for students on lower-end hardware.",
     role: "Founder, President, and Tech Lead",
     timeframe: "2025 to present",
-    tags: ["Nonprofit", "Python", "Curriculum", "Koda Studio"],
+    tags: ["Python", "Education", "AI", "Browser IDE"],
     links: [
       { label: "bytesizedpython.org", href: "https://bytesizedpython.org" },
       { label: "Koda Studio", href: "https://studio.bytesizedpython.org" },
@@ -92,15 +94,14 @@ export const projects: Project[] = [
     caseStudy: {
       problem: {
         paragraphs: [
-          "Paid coding classes are out of reach for a lot of students. Many free options assume a recent computer, which leaves out students working on older or lower-end machines.",
-          "I started Byte-Sized Python after realizing I had the skills to build whatever I wanted, and that people kept asking me for help with computers. There was a real gap in computer education, so I started teaching. It grew into an organization, with lessons made as fun as possible for kids.",
+          "Paid coding classes are out of reach for many students. Even free learning tools can assume access to newer hardware, leaving students with older or lower-end computers behind.",
+          "I started Byte-Sized Python after seeing how often students wanted to learn programming but lacked access to structured instruction. What began as teaching grew into an organization focused on accessible computer science education and the tools to support it.",
         ],
       },
       built: {
         paragraphs: [
-          "I founded Byte-Sized Python and lead it as president and tech lead. That means running the teaching program and building the software it depends on.",
-          "In summer 2025, I was also head instructor. I designed a five-day Python curriculum with more than 40 exercises and take-home reference materials, and taught it to over 70 students.",
-          "Our headquarters has a five-person officer team: a president (me), a vice president, a treasurer, a secretary, and a social media manager. We hope to expand into chapters soon.",
+          "I founded Byte-Sized Python and lead its teaching program and technical development. My responsibilities span curriculum design, software development, partnerships, and organizational operations.",
+          "In summer 2025, I served as head instructor, designing a five-day Python curriculum with 40+ exercises and take-home reference materials for more than 70 students.",
         ],
         bullets: [
           { term: "Koda Studio", detail: "A browser-based coding environment with Koda, an AI coding tutor built to run well on lower-end hardware." },
@@ -111,12 +112,14 @@ export const projects: Project[] = [
       },
       howItWorks: {
         paragraphs: [
-          "Students learn in Koda Studio, which runs in the browser, so there is nothing to install. The Koda AI tutor is built into the editor.",
-          "Partnerships carry the curriculum further than we could alone:",
+          "Students work in Koda Studio, a browser-based environment that lets them write and run Python without installing software. The Koda AI tutor is built into the editor, so students get help while they work.",
+          "Where the program reaches students:",
         ],
         bullets: [
-          { term: "HTI x AA8", detail: "Delivering Koda Studio and digital literacy in rural North Carolina." },
-          { term: "Title I schools", detail: "Outreach to Charlotte-Mecklenburg Schools Title I summer camps, and an expansion into Title I schools that adds robotics and AI literacy." },
+          { term: "Our classes", detail: "Directly taught instruction, including the summer 2025 course." },
+          { term: "Partner programs", detail: "HTI x AA8 delivers Koda Studio and digital literacy in rural North Carolina." },
+          { term: "Title I outreach", detail: "Outreach to Charlotte-Mecklenburg Schools Title I summer camps, and an expansion into Title I schools that adds robotics and AI literacy." },
+          { term: "Peer-led chapters", detail: "Student volunteers, parents, and teachers can launch their own chapter with the Chapter Starter Kit." },
         ],
         diagram: {
           src: "/images/projects/bsp-flow-light.webp",
@@ -128,17 +131,17 @@ export const projects: Project[] = [
         },
       },
       results: {
-        paragraphs: ["Students have come from Charlotte and from other countries. The summer 2025 course alone ran five days, with more than 40 exercises."],
+        paragraphs: ["The program combines direct instruction with browser-based tools and partner-led outreach, so we can support students beyond a single classroom or course."],
         metrics: [
           { value: "200+", label: "students taught, in Charlotte and internationally" },
-          { value: "330+", label: "students supported by the Koda AI tutor" },
+          { value: "330+", label: "students reached by the Koda AI tutor" },
           { value: "70+", label: "students in the five-day summer 2025 course" },
         ],
       },
       learned: {
-        paragraphs: ["Running Byte-Sized Python taught me how an organization actually works, and how to be a good lead while handling other tasks and the rest of life. The biggest skill I picked up was managing my time."],
+        paragraphs: ["Building Byte-Sized Python taught me that accessibility is more than making a course free. The software, hardware assumptions, curriculum, and teaching structure all affect whether students can actually participate. That changed how I approach the tools we build: I now treat the constraints of the learner as part of the engineering problem."],
       },
-      callout: { text: "Koda, our AI tutor built for lower-end hardware, has supported more than 330 students." },
+      callout: { text: "Koda, our AI tutor built for lower-end hardware, has reached more than 330 students." },
       gallery: [
         { ...shot("Koda Studio with the AI tutor", "Koda Studio editor running Python, with the Koda AI tutor panel", "koda-studio.webp") },
         { ...shot("BSP Stats dashboard", "BSP Stats dashboard showing visitors, page views, traffic over time, and traffic sources for the Byte-Sized Python site", "bsp-stats.webp") },
@@ -149,13 +152,14 @@ export const projects: Project[] = [
     slug: "yeti-robotics",
     title: "YETI Robotics Controls Team",
     kind: "FRC Team 3506",
-    summary: "Leading a 30-person programming and electrical team on a robotics team that won its division at the 2026 FIRST World Championship.",
+    summary: "Leading programming and electrical for FRC Team 3506, developing robot controls, localization, vision, and autonomous systems for a championship-winning robot.",
     role: "Controls Manager (programming and electrical)",
     timeframe: "Fall 2024 to present",
     tags: ["FRC", "Java", "WPILib", "Computer vision", "Controls", "Electrical"],
     links: [
       { label: "YETI Robotics on GitHub", href: "https://github.com/yeti-robotics" },
       { label: "yetirobotics.org", href: "https://yetirobotics.org" },
+      { label: "sim-sandbox", href: "https://github.com/yeti-robotics/sim-sandbox" },
     ],
     featured: true,
     cover: {
@@ -170,25 +174,25 @@ export const projects: Project[] = [
       problem: {
         paragraphs: [
           "An FRC robot has to know where it is on the field, aim and shoot accurately from anywhere, and keep doing all of it through a full match without its battery voltage sagging into a brownout.",
-          "As controls manager, I lead a 30-person team across programming and electrical, so the work is as much about splitting problems up and reviewing code as writing it. Build season runs more than 21 hours a week, and I put in over 600 hours a year alongside a full course load.",
+          "As controls manager, I lead a 30-person team across programming and electrical. The work involves coordinating subsystems, reviewing code, and distributing engineering tasks, alongside hands-on development. During build season, our team works more than 21 hours a week, and I contribute over 600 hours annually.",
         ],
       },
       built: {
-        paragraphs: ["The robot code I wrote or led, all in Java on WPILib:"],
+        paragraphs: ["I developed and led Java-based robot systems using WPILib, including:"],
         bullets: [
-          { term: "Every subsystem", detail: "Shooter flywheels, intake slides, elevators, and articulated arms." },
-          { term: "AprilTag vision", detail: "A three-camera AprilTag pipeline for real-time field localization, built after evaluating PhotonVision against Limelight. We went with Limelight, and calibrated the cameras with ChArUco boards." },
-          { term: "Auto-alignment", detail: "Automated target alignment, so the robot aims without driver input. It cut cycle time." },
-          { term: "Flywheel lookup map", detail: "An interpolated map from shot distance to flywheel speed in rotations per second, so shots stay accurate from different spots on the field." },
-          { term: "Swerve drive tuning", detail: "PID tuning for a swerve drive on Kraken X60 motors with TalonFX controllers." },
-          { term: "Brownout prevention", detail: "Keeping the robot’s power draw from dropping battery voltage into brownout during a match, using current limits." },
+          { term: "Every subsystem", detail: "Control software for the robot’s major mechanisms, including shooter flywheels, intake slides, elevators, and articulated arms." },
+          { term: "AprilTag vision", detail: "A three-camera AprilTag pipeline for real-time field localization. After evaluating PhotonVision and Limelight, we selected Limelight and calibrated our cameras using ChArUco boards." },
+          { term: "Auto-alignment", detail: "An automated target-alignment system that reduces the driver’s manual aiming workload and helps the robot consistently orient toward its target." },
+          { term: "Flywheel lookup map", detail: "An interpolated lookup map that converts target distance into flywheel speed, helping maintain consistent shots from different positions on the field." },
+          { term: "Swerve drive tuning", detail: "Tuned the swerve-drive control system using PID adjustments across Kraken X60 motors and TalonFX controllers." },
+          { term: "Brownout prevention", detail: "Current-limit adjustments that help prevent voltage sag and brownouts during high-demand match conditions." },
+          { term: "Simulation tooling", detail: "sim-sandbox, an open-source template for practicing PID tuning without a physical robot, and a port of MapleSim to the WPILib 2027 alpha 2 release for our team’s internal CADathon challenge." },
         ],
       },
       howItWorks: {
         paragraphs: [
-          "Three cameras detect AprilTags on the field. Each detection gives a pose estimate, which is fused with the drivetrain’s own odometry through a Kalman filter, so the robot’s position stays stable when tags drop out of view.",
+          "Three cameras detect AprilTags on the field, and each detection gives a pose estimate. These estimates are fused with the drivetrain’s own odometry through a Kalman filter, so the robot’s position stays stable when tags drop out of view or readings are noisy.",
           "Knowing its position means the robot knows its distance to the target. Auto-alignment turns it to face the target, and the lookup map interpolates the flywheel speed for that distance.",
-          "I also built sim-sandbox, an open-source template that lets FRC programmers practice PID tuning on mechanisms without a physical robot, hardware, or motors. Separately, I ported MapleSim to the WPILib 2027 alpha 2 release as a template for our team’s internal CADathon challenge.",
         ],
         diagram: {
           src: "/images/projects/yeti-flow-light.webp",
@@ -201,7 +205,7 @@ export const projects: Project[] = [
       },
       results: {
         paragraphs: [
-          "Titles and awards are team results. Every subteam on YETI Robotics contributed to them. Our autonomous routines added about 50 points a match toward them.",
+          "The team’s championship results reflect contributions across all subteams. Our autonomous routines contributed approximately 50 points per match toward the team’s overall performance.",
         ],
         metrics: [
           { value: "2026", label: "FIRST World Championship, Hopper Division title", note: "Team" },
@@ -211,15 +215,20 @@ export const projects: Project[] = [
         bullets: [
           { term: "Engineering Inspiration Award", detail: "FIRST Championship. Team award." },
           { term: "Innovation in Controls Award", detail: "District event. Team award." },
-          { term: "Volunteering", detail: "First on the team in community volunteering, with 140+ hours." },
+        ],
+      },
+      community: {
+        paragraphs: [],
+        bullets: [
+          { term: "Volunteering", detail: "140+ community volunteer hours, the most on the team in 2026." },
           { term: "Outreach", detail: "Robot demos reaching 120+ community members, including events at Wallace Pruitt Recreation Center and with LPL Financial and Big Brothers Big Sisters." },
-          { term: "Advocacy", detail: "Lobbied six North Carolina and South Carolina senators and representatives at the U.S. Capitol for STEM funding." },
+          { term: "Advocacy", detail: "Advocated for STEM funding at the U.S. Capitol, meeting with six legislators from North Carolina and South Carolina." },
         ],
       },
       learned: {
-        paragraphs: ["Programming on YETI shaped who I am. Working with so many like-minded peers taught me how to lead people and keep everyone occupied, and it pushed me to keep thinking creatively."],
+        paragraphs: ["Working on a robot with dozens of contributors taught me that engineering is as much about coordination and system integration as individual code. A subsystem can work in isolation and still fail to contribute to the robot as a whole. I learned to approach problems with both the technical system and the people building it in mind."],
       },
-      callout: { text: "Our autonomous routines added about 50 points a match.", attribution: "YETI Robotics, FRC Team 3506" },
+      callout: { text: "Our autonomous routines contributed about 50 points a match.", attribution: "YETI Robotics, FRC Team 3506" },
       gallery: [
         { src: "/images/projects/yeti-robotics-alignment.webp", alt: "Yellow game pieces in the air over the field as the robot shoots at a target marked with AprilTags", width: 653, height: 408, caption: "Photo: auto-alignment in action" },
         { ...shot("PID tuning an elevator in AdvantageScope", "AdvantageScope line graph of an elevator's position tracking its target position over time, alongside its supply current", "sim-sandbox.webp") },
@@ -230,7 +239,7 @@ export const projects: Project[] = [
     slug: "sim-sandbox",
     title: "sim-sandbox",
     kind: "Open source",
-    summary: "An open-source template and step-by-step guide for practicing PID tuning on FRC mechanisms (arm, elevator, wrist) without a physical robot, hardware, or motors. It uses YETI’s 2025 robot as the example, and 20+ students used it in its first year.",
+    summary: "An open-source WPILib simulation template that lets FRC programmers practice PID tuning on mechanisms without physical hardware. Used by 20+ students in its first year.",
     role: "Author",
     timeframe: "2025 to present",
     tags: ["Open source", "Java", "WPILib", "PID tuning"],
@@ -242,11 +251,11 @@ export const projects: Project[] = [
   {
     slug: "fileatlas",
     title: "FileAtlas",
-    kind: "greenCode Hackathon winner",
-    summary: "Your Google Drive as an interactive node graph, with duplicate file detection, natural language search, and AI-suggested file names. Won the regional greenCode hackathon in Greenville, SC, with a team of four.",
+    kind: "Hackathon winner",
+    summary: "An interactive graph for exploring Google Drive, with duplicate detection, natural-language search, and AI-suggested file names. Built with a four-person team and named winner of the greenCode regional hackathon.",
     role: "Lead developer",
     timeframe: "May 2026",
-    tags: ["Next.js", "TypeScript", "Google Drive API", "OpenAI"],
+    tags: ["Next.js", "TypeScript", "Google Drive API", "AI"],
     links: [],
     featured: false,
     cover: shot("FileAtlas", "FileAtlas node graph showing a project, its folders, and their files", "fileatlas.webp"),
@@ -256,7 +265,7 @@ export const projects: Project[] = [
     slug: "clairify",
     title: "Clairify",
     kind: "NASA Space Apps, Charlotte winner",
-    summary: "NASA air quality sensor data plus Gemini AI, turned into personal respiratory health guidance. Won the Invented for Life Award with a team formed on-site.",
+    summary: "An air-quality application combining NASA sensor data and Gemini AI to help users interpret environmental conditions. Built with a team formed at NASA Space Apps Charlotte, where we won the Invented for Life Award.",
     role: "Co-founder and developer",
     timeframe: "Fall 2025",
     tags: ["Gemini API", "NASA data", "Web app"],
@@ -269,7 +278,7 @@ export const projects: Project[] = [
     slug: "permafrost",
     title: "Permafrost",
     kind: "Tool for FRC teams",
-    summary: "SolidWorks file sharing over Google Drive, with check-out locks, atomic pushes, and full history. Built in Rust and React to fix what went wrong with CacheCAD.",
+    summary: "A SolidWorks collaboration tool built around Google Drive, with check-out locks, atomic pushes, and version history. Developed in Rust and React to address the reliability problems I encountered with CacheCAD.",
     role: "Designer and developer",
     timeframe: "2026",
     tags: ["Rust", "Tauri", "React", "SolidWorks"],
@@ -282,7 +291,7 @@ export const projects: Project[] = [
     slug: "lineweave",
     title: "Lineweave",
     kind: "Tool for FRC teams",
-    summary: "A real-time collaborative take on draw.io: live cursors, autosave to Google Drive, and files that open in diagrams.net without losing anything.",
+    summary: "A real-time collaborative diagram editor with live cursors, autosave to Google Drive, and diagrams.net-compatible files that preserve their original structure.",
     role: "Designer and developer",
     timeframe: "2026",
     tags: ["Next.js", "Yjs", "Firebase", "Google Drive"],
@@ -295,7 +304,7 @@ export const projects: Project[] = [
     slug: "aid-compass",
     title: "Aid Compass",
     kind: "Congressional App Challenge, NC-08",
-    summary: "A FEMA disaster aid navigator, with the NC VOAD member directory scraped and structured so people can find help.",
+    summary: "A disaster-aid navigator that helps users explore available assistance and local support organizations, using structured FEMA and North Carolina VOAD information.",
     role: "Lead developer",
     timeframe: "2026",
     tags: ["Next.js", "Tailwind", "Gemini API", "Mapbox GL JS", "Vercel"],
@@ -308,7 +317,7 @@ export const projects: Project[] = [
     slug: "lunaris360",
     title: "Lunaris360",
     kind: "Team hackathon project",
-    summary: "Lunar south pole mission planning in the browser, with Story Mode for learners and Mission Control for experts.",
+    summary: "A browser-based lunar south pole exploration planner with two interfaces: Story Mode for learners and Mission Control for detailed mission planning.",
     role: "Lead developer",
     timeframe: "NASA Space Apps 2026",
     tags: ["Web app", "Hackathon", "Space"],
@@ -316,19 +325,6 @@ export const projects: Project[] = [
     featured: false,
     cover: shot("Lunaris360", "Lunaris360 Open Exploration view with a 3D Moon and data layers", "lunaris360.webp"),
     href: "https://lunaris360.earth",
-  },
-  {
-    slug: "koda-studio",
-    title: "Koda Studio and BSP tools",
-    kind: "Byte-Sized Python",
-    summary: "A browser-based coding environment with the Koda AI tutor, plus Koda Live, BSP Stats, and the Chapter Starter Kit.",
-    role: "Tech Lead",
-    timeframe: "2026",
-    tags: ["Education", "AI tutor", "Browser IDE"],
-    links: [],
-    featured: false,
-    cover: shot("Koda Studio", "Koda Studio editor running Python, with the Koda AI tutor panel", "koda-studio.webp"),
-    href: "/projects/byte-sized-python/",
   },
 ];
 
