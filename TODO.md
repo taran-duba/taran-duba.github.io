@@ -33,9 +33,10 @@ Also review the `about.paragraphs` for voice.
 
 ## Images (`public/images/projects/`)
 
-Screenshots are in for Byte-Sized Python, Koda Studio, Aid Compass, Lunaris360, FileAtlas, Clairify,
-Permafrost, and Lineweave (taken from the live sites; FileAtlas is a demo project built by hand in the
-local no-login mode). Still missing, each `src` is `TODO` in `content/projects.ts`:
+Images are in for every project and both case studies (screenshots from the live sites for Byte-Sized Python,
+Koda Studio, Aid Compass, Lunaris360, FileAtlas, Clairify, Permafrost, and Lineweave, plus photos, diagrams,
+BSP Stats, and the sim-sandbox capture) (taken from the live sites; FileAtlas is a demo project built by hand in the
+local no-login mode). Every image slot is filled. Optional:
 
 - Larger originals of the two YETI photos, if you have them (they are about 650px wide, so they look a little soft at full width).
 
