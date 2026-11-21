@@ -14,29 +14,18 @@ Filled in from the resume (v6) and public repos: school, class year, email, GitH
 YETI timeframes and details, sim-sandbox, Clairify, Permafrost, Lineweave, leadership rows,
 and most honors.
 
-## Resume PDF (`content/site.ts`, `public/resume.pdf`)
-
-Both resume buttons are hidden until this is done.
-
-1. In Word, open `Taran_Duba_v6.docx` and choose File, Save As, PDF.
-2. Save it over `public/resume.pdf`.
-3. In `content/site.ts`, set `resumePath` to `"/resume.pdf"`.
-
 ## Identity (`content/site.ts`)
 
 | Field | What is needed |
 | --- | --- |
 | `siteConfig.headshot.src` | Headshot path, e.g. `/images/headshot.webp` (portrait, about 800x1000, WebP). Until set, the hero shows a "TD." monogram. |
-| `about.outsideOfCode.items[].detail` | One specific detail each for Cars, Fashion and style, Music. |
 
 Also review the `about.paragraphs` for voice.
 
 ## Images (`public/images/projects/`)
 
-Images are in for every project and both case studies (screenshots from the live sites for Byte-Sized Python,
-Koda Studio, Aid Compass, Lunaris360, FileAtlas, Clairify, Permafrost, and Lineweave, plus photos, diagrams,
-BSP Stats, and the sim-sandbox capture) (taken from the live sites; FileAtlas is a demo project built by hand in the
-local no-login mode). Every image slot is filled. Optional:
+Every image slot is filled. The project screenshots come from the live sites, except FileAtlas (a demo
+project built by hand in its local no-login mode), BSP Stats, and sim-sandbox (your own captures). Optional:
 
 - Larger originals of the two YETI photos, if you have them (they are about 650px wide, so they look a little soft at full width).
 
