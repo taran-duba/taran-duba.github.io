@@ -60,8 +60,8 @@ gallery slots. Sizes are in the README. Each slot's `src` in `content/projects.t
 
 | Project | Fields | What is needed |
 | --- | --- | --- |
-| Aid Compass | `timeframe`, `href` | The year and a live or repo link. |
-| Lunaris360 (formerly Shadowline) | `href` | A demo or repo link. Add any placement to `timeframe` or `summary`. |
+| Aid Compass | `timeframe` | The year. |
+| Lunaris360 (formerly Shadowline) | `summary` | Optional: add any placement or result. |
 | Koda Studio and BSP tools | `timeframe` | Year. |
 
 ## Optional

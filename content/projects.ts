@@ -71,7 +71,11 @@ export const projects: Project[] = [
     role: "Founder, President, and Tech Lead",
     timeframe: "2025 to present",
     tags: ["Nonprofit", "Python", "Curriculum", "Koda Studio"],
-    links: [{ label: "bytesizedpython.org", href: "https://bytesizedpython.org" }],
+    links: [
+      { label: "bytesizedpython.org", href: "https://bytesizedpython.org" },
+      { label: "Koda Studio", href: "https://studio.bytesizedpython.org" },
+      { label: "Koda Live", href: "https://live.bytesizedpython.org" },
+    ],
     featured: true,
     cover: cover("Byte-Sized Python", "Byte-Sized Python website and Koda Studio"),
     href: "/projects/byte-sized-python/",
@@ -267,7 +271,7 @@ export const projects: Project[] = [
     links: [],
     featured: false,
     cover: cover("Aid Compass", "Aid Compass map of disaster aid organizations"),
-    href: "TODO: live site or repo URL",
+    href: "https://cac-2026-murex.vercel.app",
   },
   {
     slug: "lunaris360",
@@ -280,7 +284,7 @@ export const projects: Project[] = [
     links: [],
     featured: false,
     cover: cover("Lunaris360", "Lunaris360 mission planning view of the lunar south pole"),
-    href: "TODO: demo or repo URL",
+    href: "https://lunaris360.earth",
   },
   {
     slug: "koda-studio",
