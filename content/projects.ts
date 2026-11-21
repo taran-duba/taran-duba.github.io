@@ -133,12 +133,12 @@ export const projects: Project[] = [
   },
   {
     slug: "yeti-robotics",
-    title: "YETI Robotics programming",
+    title: "YETI Robotics controls",
     kind: "FRC Team 3506",
-    summary: "Leading a 15-person programming subteam on a team that won its division at the 2026 FIRST World Championship.",
-    role: "Programming Lead",
+    summary: "Managing programming and electrical, and leading a 15-person programming subteam, on a team that won its division at the 2026 FIRST World Championship.",
+    role: "Controls Manager (programming and electrical)",
     timeframe: "Fall 2024 to present",
-    tags: ["FRC", "Java", "WPILib", "Computer vision", "Controls"],
+    tags: ["FRC", "Java", "WPILib", "Computer vision", "Controls", "Electrical"],
     links: [
       { label: "sim-sandbox on GitHub", href: "https://github.com/yeti-robotics/sim-sandbox" },
       { label: "MapleSim port for WPILib 2027", href: "https://github.com/yeti-robotics/maple-sim-2027-alpha2" },
@@ -150,7 +150,7 @@ export const projects: Project[] = [
       problem: {
         paragraphs: [
           "An FRC robot has to know where it is on the field, aim and shoot accurately from anywhere, and keep doing all of it through a full match without its battery voltage sagging into a brownout.",
-          "I lead a 15-person programming subteam, so the work is as much about splitting problems up and reviewing code as writing it. Build season runs more than 21 hours a week, and I put in over 600 hours a year alongside a full course load.",
+          "As controls manager I run both programming and electrical, and I lead the 15-person programming subteam, so the work is as much about splitting problems up and reviewing code as writing it. Build season runs more than 21 hours a week, and I put in over 600 hours a year alongside a full course load.",
         ],
       },
       built: {
@@ -196,7 +196,7 @@ export const projects: Project[] = [
         ],
       },
       learned: {
-        paragraphs: ["TODO: two or three sentences on what leading the programming subteam taught you."],
+        paragraphs: ["TODO: two or three sentences on what managing programming and electrical taught you."],
       },
       callout: { text: "Our autonomous routines added about 50 points a match.", attribution: "YETI Robotics, FRC Team 3506" },
       gallery: [

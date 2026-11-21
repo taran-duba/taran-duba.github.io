@@ -20,12 +20,12 @@ export const siteConfig = {
   name: "Taran Duba",
   shortName: "TD",
   /** One line under the name in the hero, and the default meta description lead. */
-  descriptor: "Founder of Byte-Sized Python. Programming lead for FRC Team 3506.",
+  descriptor: "Founder of Byte-Sized Python. Controls manager for FRC Team 3506.",
   /** Two sentence hero intro. */
   intro:
-    "I’m a high school student in Charlotte, North Carolina. I started a nonprofit that teaches Python to students who can’t pay for classes, and I lead the programming subteam on YETI Robotics.",
+    "I’m a high school student in Charlotte, North Carolina. I started a nonprofit that teaches Python to students who can’t pay for classes, and I manage programming and electrical on YETI Robotics.",
   metaDescription:
-    "Taran Duba is a high school student in Charlotte, NC. He founded Byte-Sized Python, a 501(c)(3) teaching Python to students who can’t afford paid classes, and leads programming for FRC Team 3506.",
+    "Taran Duba is a high school student in Charlotte, NC. He founded Byte-Sized Python, a 501(c)(3) teaching Python to students who can’t afford paid classes, and is controls manager for FRC Team 3506, overseeing programming and electrical.",
 
   location: "Charlotte, NC",
   school: "Providence High School",
@@ -41,7 +41,7 @@ export const siteConfig = {
    * Resume button target. While this is "TODO", both resume buttons are hidden.
    * Export the resume from Word as public/resume.pdf, then set this to "/resume.pdf".
    */
-  resumePath: "TODO: export the resume to public/resume.pdf, then set this to /resume.pdf",
+  resumePath: "/resume.pdf",
   ogImagePath: "/og.png",
 
   /**
@@ -68,15 +68,14 @@ export const about = {
     // The first paragraph is the large section heading. Keep it short.
     "I teach Python and write code for robots.",
     "Paid coding classes cost money a lot of students don’t have. I founded Byte-Sized Python, a 501(c)(3) nonprofit, so that cost doesn’t decide who gets to learn. In summer 2025 I designed and taught a five-day course with more than 40 exercises to over 70 students. Across Charlotte and abroad we’ve now taught more than 200, and Koda, the AI tutor we built for lower-end hardware, has supported more than 330.",
-    "On YETI Robotics (FRC Team 3506) I lead a 15-person programming subteam and have written Java for every subsystem on the robot, from shooter flywheels to articulated arms. Our autonomous routines added about 50 points a match, part of how the team won two district championships and its division at the 2026 FIRST World Championship.",
+    "On YETI Robotics (FRC Team 3506) I’m the controls manager, which means I run both programming and electrical. I lead a 15-person programming subteam and have written Java for every subsystem on the robot, from shooter flywheels to articulated arms. Our autonomous routines added about 50 points a match, part of how the team won two district championships and its division at the 2026 FIRST World Championship.",
     "I’m in the Class of 2028 at Providence High School. The areas I want to go deeper in are AI, robotics, and data science, and I’m looking for research and internship work in them.",
   ],
   outsideOfCode: {
     intro: "Outside of code",
     items: [
       { topic: "Cars", detail: "TODO: what you’re into (a car, a builder, a race series)" },
-      { topic: "Fashion and style", detail: "TODO: a specific detail about your style" },
-      { topic: "Music", detail: "TODO: artists or what’s on repeat" },
+      { topic: "Music", detail: "Don Toliver, Kanye West, Travis Scott" },
     ] satisfies OutsideItem[],
   },
 };

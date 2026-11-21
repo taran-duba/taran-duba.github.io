@@ -55,7 +55,7 @@ gallery slots. Sizes are in the README. Each slot's `src` in `content/projects.t
 | `caseStudy.built.bullets` AprilTag vision | Which you chose (PhotonVision or Limelight) and why. |
 | `caseStudy.built.bullets` Brownout prevention | The approach (current limits, load shedding, etc.). |
 | `caseStudy.howItWorks.paragraphs` | Confirm the description (pose fused with odometry via Kalman filter, then used to aim and pick flywheel speed) matches the robot. |
-| `caseStudy.learned.paragraphs` | Two or three sentences on what leading the subteam taught you. |
+| `caseStudy.learned.paragraphs` | Two or three sentences on what managing programming and electrical taught you. |
 
 ## Other projects (`content/projects.ts`)
 
