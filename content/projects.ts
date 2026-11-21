@@ -134,7 +134,7 @@ export const projects: Project[] = [
     slug: "yeti-robotics",
     title: "YETI Robotics Controls Team",
     kind: "FRC Team 3506",
-    summary: "Managing programming and electrical, and leading a 30-person team on a squad that won its division at the 2026 FIRST World Championship.",
+    summary: "Leading a 30-person programming and electrical team on a robotics team that won its division at the 2026 FIRST World Championship.",
     role: "Controls Manager (programming and electrical)",
     timeframe: "Fall 2024 to present",
     tags: ["FRC", "Java", "WPILib", "Computer vision", "Controls", "Electrical"],
