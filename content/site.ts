@@ -23,7 +23,7 @@ export const siteConfig = {
   descriptor: "Founder of Byte-Sized Python. Controls manager for FRC Team 3506.",
   /** Two sentence hero intro. */
   intro:
-    "I’m a high school student in Charlotte, North Carolina. I started a nonprofit that teaches Python to students who can’t pay for classes, and I manage programming and electrical on YETI Robotics.",
+    "From robot localization systems to browser-based coding tools, I like building software that solves real problems. I founded Byte-Sized Python to make programming education more accessible and lead programming and electrical at YETI Robotics, FRC Team 3506.",
   metaDescription:
     "Taran Duba is a high school student in Charlotte, NC. He founded Byte-Sized Python, a 501(c)(3) that teaches Python to students who can’t afford paid classes, and he is controls manager for FRC Team 3506, overseeing programming and electrical.",
 
@@ -57,22 +57,22 @@ export const siteConfig = {
 } as const;
 
 export const stats: Stat[] = [
-  { value: 200, suffix: "+", label: "students taught Python worldwide", note: "Byte-Sized Python", countUp: true },
-  { value: 330, suffix: "+", label: "students supported by Koda, our AI tutor built for lower-end hardware", note: "Byte-Sized Python", countUp: true },
-  { value: 140, suffix: "+", label: "volunteer hours with FRC, the most on my team in 2026", note: "YETI Robotics", countUp: true },
-  { value: 2026, label: "FIRST World Championship, Hopper Division title", note: "Team result, FRC 3506", countUp: false },
+  { value: 200, suffix: "+", label: "students taught Python, in Charlotte and internationally", note: "Byte-Sized Python", countUp: true },
+  { value: 330, suffix: "+", label: "students reached by Koda, our AI coding tutor", note: "Byte-Sized Python", countUp: true },
+  { value: 140, suffix: "+", label: "community volunteer hours through FRC", note: "YETI Robotics, highest on team in 2026", countUp: true },
+  { value: 2026, label: "FIRST World Championship, Hopper Division champion", note: "Team result, FRC 3506", countUp: false },
 ];
 
 export const about = {
   paragraphs: [
     // The first paragraph is the large section heading. Keep it short.
     "I teach Python and write code for robots.",
-    "Paid coding classes cost money a lot of students don’t have. I founded Byte-Sized Python, a 501(c)(3) nonprofit, so that cost doesn’t decide who gets to learn. In summer 2025, I designed and taught a five-day course with more than 40 exercises to over 70 students. Across Charlotte and abroad, we’ve now taught more than 200, and Koda, the AI tutor we built for lower-end hardware, has supported more than 330.",
-    "On YETI Robotics (FRC Team 3506), I’m the controls manager, which means I lead a 30-person team across programming and electrical. I’ve written Java for every subsystem on the robot, from shooter flywheels to articulated arms. Our autonomous routines added about 50 points a match, part of how the team won two district championships and its division at the 2026 FIRST World Championship.",
-    "I’m in the Class of 2028 at Providence High School. The areas I want to go deeper in are AI, robotics, and data science, and I’m looking for research and internship work in them.",
+    "Access to computer science education shouldn’t depend on what a student can afford. I founded Byte-Sized Python, a 501(c)(3) nonprofit, to make learning Python more accessible. In summer 2025, I designed and taught a five-day course with 40+ exercises to more than 70 students. Since then, our program has reached 200+ students in Charlotte and internationally, and Koda, our AI coding tutor, has reached 330+.",
+    "On YETI Robotics (FRC Team 3506), I lead a 30-person programming and electrical team as controls manager. I develop Java-based robot systems, including vision, localization, auto-alignment, and mechanism control. Our autonomous routines contributed roughly 50 points per match, helping the team earn two district championships and the 2026 FIRST World Championship Hopper Division title.",
+    "I’m interested in the intersection of robotics, AI, and software engineering, especially problems where computation has to interact with the real world. I’m continuing to explore those areas through robotics, independent projects, and technical experimentation.",
   ],
   outsideOfCode: {
-    intro: "Outside of code",
+    intro: "When I’m not building",
     items: [
       { topic: "Cars", detail: "Formula 1 & BMW" },
       { topic: "Music", detail: "Don Toliver, Kanye West, Travis Scott" },
@@ -90,5 +90,5 @@ export const navLinks = [
 
 export const contactCopy = {
   heading: "Get in touch",
-  body: "If you’re working on something in robotics or computer science education, I’d like to hear about it. Email is the fastest way to reach me.",
+  body: "I’m always interested in conversations about robotics, software engineering, computer science education, and projects that make technology more accessible. Email is the easiest way to reach me.",
 };
