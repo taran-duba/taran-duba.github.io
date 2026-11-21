@@ -74,7 +74,7 @@ export const about = {
   outsideOfCode: {
     intro: "Outside of code",
     items: [
-      { topic: "Cars", detail: "TODO: what you’re into (a car, a builder, a race series)" },
+      { topic: "Cars", detail: "Formula 1 & BMW" },
       { topic: "Music", detail: "Don Toliver, Kanye West, Travis Scott" },
     ] satisfies OutsideItem[],
   },
