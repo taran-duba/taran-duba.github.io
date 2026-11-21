@@ -138,7 +138,7 @@ export const projects: Project[] = [
       callout: { text: "Koda, our AI tutor built for lower-end hardware, has supported more than 330 students." },
       gallery: [
         { ...shot("Koda Studio with the AI tutor", "Koda Studio editor running Python, with the Koda AI tutor panel", "koda-studio.webp") },
-        { src: "TODO: gallery image", alt: "BSP Stats dashboard", width: 1600, height: 1000, caption: "Screenshot: BSP Stats dashboard" },
+        { ...shot("BSP Stats dashboard", "BSP Stats dashboard showing visitors, page views, traffic over time, and traffic sources for the Byte-Sized Python site", "bsp-stats.webp") },
       ],
     },
   },
