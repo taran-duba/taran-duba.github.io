@@ -59,7 +59,7 @@ export const siteConfig = {
 export const stats: Stat[] = [
   { value: 200, suffix: "+", label: "students taught Python worldwide", note: "Byte-Sized Python", countUp: true },
   { value: 330, suffix: "+", label: "students supported by Koda, our AI tutor built for lower-end hardware", note: "Byte-Sized Python", countUp: true },
-  { value: 140, suffix: "+", label: "volunteer hours with FRC, the most on my team", note: "YETI Robotics", countUp: true },
+  { value: 140, suffix: "+", label: "volunteer hours with FRC, the most on my team in 2026", note: "YETI Robotics", countUp: true },
   { value: 2026, label: "FIRST World Championship, Hopper Division title", note: "Team result, FRC 3506", countUp: false },
 ];
 
