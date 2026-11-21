@@ -16,7 +16,7 @@ export const experience: Experience[] = [
     organization: "Byte-Sized Python",
     years: "2025 to present",
     lines: [
-      "Run a 501(c)(3) that teaches Python to students who can’t afford paid classes. 200+ students taught in Charlotte and internationally.",
+      "Started teaching in summer 2025 and became a 501(c)(3) that October. Teaches Python to students who can’t afford paid classes, with 200+ students taught in Charlotte and internationally.",
       "Designed and taught the summer 2025 course: five days, 40+ exercises, 70+ students. Partners include eVidyaloka and HTI x AA8.",
     ],
     href: "/projects/byte-sized-python/",
@@ -79,11 +79,12 @@ export const experience: Experience[] = [
     lines: ["Nominated by teachers. Organized school events, hosted campus tours, and welcomed new families."],
   },
   {
-    role: "Product Development Intern",
-    organization: "BlackBuck, Bangalore",
-    years: "2023",
+    role: "Volunteer, Loans Product Team",
+    organization: "BlackBuck (Zinka Logistics), Bangalore",
+    years: "Summer 2024",
     lines: [
-      "Built a Python API that fills structured form inputs into HTML-templated bank loan documents, speeding up truck financing for drivers and fleet operators.",
+      "144 hours from June 17 to July 10, 2024, with the product specialists on BlackBuck's loans business for secondhand truck buyers.",
+      "Simulated the business rules engine in Python to find the best rule set for pre-approving loans, and built HTML and CSS insurance form templates and a mobile responsive loan application page from a Figma design.",
     ],
   },
 ];
