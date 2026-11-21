@@ -285,7 +285,7 @@ export const projects: Project[] = [
     links: [],
     featured: false,
     cover: shot("Permafrost", "Permafrost app window listing shared SolidWorks files with check-out status", "permafrost.webp"),
-    href: "https://github.com/taran-duba/permafrost",
+    href: "https://permafrost-azure.vercel.app",
   },
   {
     slug: "lineweave",
@@ -298,7 +298,7 @@ export const projects: Project[] = [
     links: [],
     featured: false,
     cover: shot("Lineweave", "Lineweave diagram editor showing a flowchart in the demo", "lineweave.webp"),
-    href: "https://lineweave-weld.vercel.app",
+    href: "https://github.com/taran-duba/lineweave",
   },
   {
     slug: "aid-compass",
@@ -311,7 +311,7 @@ export const projects: Project[] = [
     links: [],
     featured: false,
     cover: shot("Aid Compass", "Aid Compass home page: Find the disaster aid you actually qualify for", "aid-compass.webp"),
-    href: "https://cac-2026-murex.vercel.app",
+    href: "https://github.com/quadruple-t/cac-2026",
   },
   {
     slug: "lunaris360",
@@ -324,7 +324,7 @@ export const projects: Project[] = [
     links: [],
     featured: false,
     cover: shot("Lunaris360", "Lunaris360 Open Exploration view with a 3D Moon and data layers", "lunaris360.webp"),
-    href: "https://lunaris360.earth",
+    href: "https://github.com/quadruple-t/space-apps-2026",
   },
 ];
 
