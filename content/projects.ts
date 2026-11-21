@@ -266,7 +266,7 @@ export const projects: Project[] = [
     kind: "Congressional App Challenge, NC-08",
     summary: "A FEMA disaster aid navigator, with the NC VOAD member directory scraped and structured so people can find help.",
     role: "Lead developer",
-    timeframe: "TODO: year",
+    timeframe: "2026",
     tags: ["Next.js", "Tailwind", "Gemini API", "Mapbox GL JS", "Vercel"],
     links: [],
     featured: false,
