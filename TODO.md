@@ -52,7 +52,6 @@ gallery slots. Sizes are in the README. Each slot's `src` in `content/projects.t
 
 | Field | What is needed |
 | --- | --- |
-| `caseStudy.built.bullets` AprilTag vision | Which you chose (PhotonVision or Limelight) and why. |
 | `caseStudy.built.bullets` Brownout prevention | The approach (current limits, load shedding, etc.). |
 | `caseStudy.howItWorks.paragraphs` | Confirm the description (pose fused with odometry via Kalman filter, then used to aim and pick flywheel speed) matches the robot. |
 | `caseStudy.learned.paragraphs` | Two or three sentences on what managing programming and electrical taught you. |
@@ -61,8 +60,8 @@ gallery slots. Sizes are in the README. Each slot's `src` in `content/projects.t
 
 | Project | Fields | What is needed |
 | --- | --- | --- |
-| Aid Compass | `role`, `timeframe`, `href` | Your role on the team of four, the year and challenge outcome, a live or repo link. |
-| Lunaris360 (formerly Shadowline) | `role`, `timeframe`, `href` | Your role, hackathon name, date and result, a demo or repo link. |
+| Aid Compass | `timeframe`, `href` | The year and a live or repo link. |
+| Lunaris360 (formerly Shadowline) | `href` | A demo or repo link. Add any placement to `timeframe` or `summary`. |
 | Koda Studio and BSP tools | `timeframe` | Year. |
 
 ## Leadership (`content/experience.ts`)
@@ -75,9 +74,7 @@ gallery slots. Sizes are in the README. Each slot's `src` in `content/projects.t
 
 | Entry | Field | What is needed |
 | --- | --- | --- |
-| Engineering Inspiration Award | `year` | Year. |
-| District championship titles | `year` | The two years. |
-| Innovation in Controls Award | `year` | Year, and the district event name if you want it in `context`. |
+| Innovation in Controls Award | `context` | Optional: the district event name. |
 | FPSPI 2nd place, International Conference | `year` | Year. |
 | FPSPI 2nd place, NC State (Elementary) | `year` | Year. |
 
