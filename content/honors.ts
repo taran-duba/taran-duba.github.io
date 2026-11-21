@@ -43,9 +43,9 @@ export const honors: Honor[] = [
   {
     award: "greenCode Hackathon winner",
     holder: "Team",
-    level: "TODO: level",
+    level: "Regional",
     year: "2026",
-    context: "FileAtlas, a team of four",
+    context: "FileAtlas. Hackathon in Greenville, SC, with about 15 teams and 60 students from NC and SC.",
   },
   {
     award: "Presidential Volunteer Service Award, Gold",

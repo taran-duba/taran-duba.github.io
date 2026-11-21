@@ -91,20 +91,20 @@ export const projects: Project[] = [
       problem: {
         paragraphs: [
           "Paid coding classes are out of reach for a lot of students. Many free options assume a recent computer, which leaves out students working on older or lower-end machines.",
-          "TODO: founding story. When and why you started BSP, in two or three sentences.",
+          "I started Byte-Sized Python after realizing I had the skills to build whatever I wanted, and that people kept asking me for help with computers. There was a real gap in computer education, so I started teaching. It grew into an organization, with lessons made as fun as possible for kids.",
         ],
       },
       built: {
         paragraphs: [
           "I founded Byte-Sized Python and lead it as president and tech lead. That means running the teaching program and building the software it depends on.",
           "In summer 2025, I was also head instructor. I designed a five-day Python curriculum with more than 40 exercises and take-home reference materials, and taught it to over 70 students.",
-          "TODO: officer team size and how the team is organized.",
+          "Our headquarters has a five-person officer team: a president (me), a vice president, a treasurer, a secretary, and a social media manager. We hope to expand into chapters soon.",
         ],
         bullets: [
           { term: "Koda Studio", detail: "A browser-based coding environment with Koda, an AI coding tutor built to run well on lower-end hardware." },
-          { term: "Koda Live", detail: "TODO: one line on what Koda Live does." },
-          { term: "BSP Stats", detail: "A dashboard for the program’s numbers. TODO: what it tracks." },
-          { term: "Chapter Starter Kit", detail: "TODO: one line on what the kit includes and who it is for." },
+          { term: "Koda Live", detail: "A classroom Python platform. A teacher starts a session, students join with a six-character code and code in the browser, and Koda gives them live feedback while the teacher watches everyone’s progress on a dashboard." },
+          { term: "BSP Stats", detail: "An internal dashboard for our leadership that pulls Vercel web analytics (visitors, pageviews, bounce rate, traffic sources, and page-level stats) across our sites, plus YouTube stats." },
+          { term: "Chapter Starter Kit", detail: "A kit for people launching their own peer-led chapter, such as student volunteers, parents, or teachers. It has a launch checklist, setup and facilitator guides, a 20-session curriculum outline across six units, an FAQ, and logos. The facilitator doesn’t need to know Python, and nobody needs a call with us to get started." },
         ],
       },
       howItWorks: {
@@ -133,7 +133,7 @@ export const projects: Project[] = [
         ],
       },
       learned: {
-        paragraphs: ["TODO: two or three sentences on what running BSP has taught you. Specific beats general."],
+        paragraphs: ["Running Byte-Sized Python taught me how an organization actually works, and how to be a good lead while handling other tasks and the rest of life. The biggest skill I picked up was managing my time."],
       },
       callout: { text: "Koda, our AI tutor built for lower-end hardware, has supported more than 330 students." },
       gallery: [
@@ -178,7 +178,7 @@ export const projects: Project[] = [
           { term: "Auto-alignment", detail: "Automated target alignment, so the robot aims without driver input. It cut cycle time." },
           { term: "Flywheel lookup map", detail: "An interpolated map from shot distance to flywheel speed in rotations per second, so shots stay accurate from different spots on the field." },
           { term: "Swerve drive tuning", detail: "PID tuning for a swerve drive on Kraken X60 motors with TalonFX controllers." },
-          { term: "Brownout prevention", detail: "Keeping the robot’s power draw from dropping battery voltage into brownout during a match." },
+          { term: "Brownout prevention", detail: "Keeping the robot’s power draw from dropping battery voltage into brownout during a match, using current limits." },
         ],
       },
       howItWorks: {
@@ -213,7 +213,7 @@ export const projects: Project[] = [
         ],
       },
       learned: {
-        paragraphs: ["TODO: two or three sentences on what managing programming and electrical taught you."],
+        paragraphs: ["Programming on YETI shaped who I am. Working with so many like-minded peers taught me how to lead people and keep everyone occupied, and it pushed me to keep thinking creatively."],
       },
       callout: { text: "Our autonomous routines added about 50 points a match.", attribution: "YETI Robotics, FRC Team 3506" },
       gallery: [
@@ -239,7 +239,7 @@ export const projects: Project[] = [
     slug: "fileatlas",
     title: "FileAtlas",
     kind: "greenCode Hackathon winner",
-    summary: "Your Google Drive as an interactive node graph, with duplicate file detection, natural language search, and AI-suggested file names. Won greenCode with a team of four.",
+    summary: "Your Google Drive as an interactive node graph, with duplicate file detection, natural language search, and AI-suggested file names. Won the regional greenCode hackathon in Greenville, SC, with a team of four.",
     role: "Lead developer",
     timeframe: "May 2026",
     tags: ["Next.js", "TypeScript", "Google Drive API", "OpenAI"],

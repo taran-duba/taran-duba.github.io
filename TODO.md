@@ -42,25 +42,13 @@ local no-login mode). Still missing, each `src` is `TODO` in `content/projects.t
 - BSP Stats screenshot for the second Byte-Sized Python gallery slot.
 - Both case study diagrams.
 
-## Byte-Sized Python case study (`content/projects.ts`, slug `byte-sized-python`)
+## Byte-Sized Python case study
 
-| Field | What is needed |
-| --- | --- |
-| `timeframe` | Set to `2025 to present` from the resume. Change it if BSP started earlier than the summer 2025 course. |
-| `caseStudy.problem.paragraphs[1]` | Founding story: when and why you started BSP, two or three sentences. |
-| `caseStudy.built.paragraphs[2]` | Officer team size and how the team is organized. |
-| `caseStudy.built.bullets` Koda Live | One line on what Koda Live does. |
-| `caseStudy.built.bullets` BSP Stats | What the dashboard tracks. |
-| `caseStudy.built.bullets` Chapter Starter Kit | What the kit includes and who it is for. |
-| `caseStudy.learned.paragraphs` | Two or three sentences on what running BSP has taught you. |
+All written. The officer paragraph uses roles only, no names. Add names in `content/projects.ts` if you want them.
 
-## YETI Robotics case study (`content/projects.ts`, slug `yeti-robotics`)
+## YETI Robotics case study
 
-| Field | What is needed |
-| --- | --- |
-| `caseStudy.built.bullets` Brownout prevention | The approach (current limits, load shedding, etc.). |
-| `caseStudy.howItWorks.paragraphs` | Confirm the description (pose fused with odometry via Kalman filter, then used to aim and pick flywheel speed) matches the robot. |
-| `caseStudy.learned.paragraphs` | Two or three sentences on what managing programming and electrical taught you. |
+All written. Still worth a read: `caseStudy.howItWorks.paragraphs` (pose fused with odometry via a Kalman filter, then used to aim and pick flywheel speed) should match the robot.
 
 ## Other projects (`content/projects.ts`)
 
