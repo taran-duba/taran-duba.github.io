@@ -222,7 +222,7 @@ export const projects: Project[] = [
       callout: { text: "Our autonomous routines added about 50 points a match.", attribution: "YETI Robotics, FRC Team 3506" },
       gallery: [
         { src: "/images/projects/yeti-robotics-alignment.webp", alt: "Yellow game pieces in the air over the field as the robot shoots at a target marked with AprilTags", width: 653, height: 408, caption: "Photo: auto-alignment in action" },
-        { src: "TODO: gallery image", alt: "A simulated robot mechanism being tuned in sim-sandbox", width: 1600, height: 1000, caption: "Screenshot: sim-sandbox PID tuning" },
+        { ...shot("PID tuning an elevator in AdvantageScope", "AdvantageScope line graph of an elevator's position tracking its target position over time, alongside its supply current", "sim-sandbox.webp") },
       ],
     },
   },
@@ -236,7 +236,7 @@ export const projects: Project[] = [
     tags: ["Open source", "Java", "WPILib", "PID tuning"],
     links: [],
     featured: false,
-    cover: cover("sim-sandbox", "sim-sandbox tuning an FRC mechanism"),
+    cover: { ...shot("PID tuning an elevator in AdvantageScope", "AdvantageScope line graph of an elevator's position tracking its target position over time, alongside its supply current", "sim-sandbox.webp") },
     href: "https://github.com/yeti-robotics/sim-sandbox",
   },
   {
