@@ -160,14 +160,14 @@ export const projects: Project[] = [
           { term: "Auto-alignment", detail: "Automated target alignment, so the robot aims without driver input. It cut cycle time." },
           { term: "Flywheel lookup map", detail: "An interpolated map from shot distance to flywheel speed in rotations per second, so shots stay accurate from different spots on the field." },
           { term: "Swerve drive tuning", detail: "PID tuning for a swerve drive on Kraken X60 motors with TalonFX controllers." },
-          { term: "Brownout prevention", detail: "Keeping the robot’s power draw from dropping battery voltage into brownout during a match. TODO: the approach." },
+          { term: "Brownout prevention", detail: "Keeping the robot’s power draw from dropping battery voltage into brownout during a match." },
         ],
       },
       howItWorks: {
         paragraphs: [
           "Three cameras detect AprilTags on the field. Each detection gives a pose estimate, which is fused with the drivetrain’s own odometry through a Kalman filter, so the robot’s position stays stable when tags drop out of view.",
           "Knowing its position means the robot knows its distance to the target. Auto-alignment turns it to face the target, and the lookup map interpolates the flywheel speed for that distance.",
-          "To test without a robot, I built sim-sandbox, an open-source template for simulating FRC mechanisms, and ported MapleSim in our team repo to support the WPILib 2027 alpha 2 release.",
+          "I also built sim-sandbox, an open-source template that lets FRC programmers practice PID tuning on mechanisms without a physical robot, hardware, or motors. Separately, I ported MapleSim to the WPILib 2027 alpha 2 release as a template for our team’s internal CADathon challenge.",
         ],
         diagram: {
           src: "TODO: diagram image",
@@ -200,7 +200,7 @@ export const projects: Project[] = [
       callout: { text: "Our autonomous routines added about 50 points a match.", attribution: "YETI Robotics, FRC Team 3506" },
       gallery: [
         { src: "TODO: gallery image", alt: "Robot lining up on an AprilTag", width: 1600, height: 1000, caption: "Photo: robot aligning with vision" },
-        { src: "TODO: gallery image", alt: "Simulation of a robot mechanism in sim-sandbox", width: 1600, height: 1000, caption: "Screenshot: sim-sandbox mechanism simulation" },
+        { src: "TODO: gallery image", alt: "A simulated robot mechanism being tuned in sim-sandbox", width: 1600, height: 1000, caption: "Screenshot: sim-sandbox PID tuning" },
       ],
     },
   },
@@ -208,10 +208,10 @@ export const projects: Project[] = [
     slug: "sim-sandbox",
     title: "sim-sandbox",
     kind: "Open source",
-    summary: "A template and step-by-step guide for simulating and tuning FRC mechanisms (arm, elevator, wrist), using YETI’s 2025 robot as the example. 20+ students used it in its first year.",
+    summary: "An open-source template and step-by-step guide for practicing PID tuning on FRC mechanisms (arm, elevator, wrist) without a physical robot, hardware, or motors. It uses YETI’s 2025 robot as the example, and 20+ students used it in its first year.",
     role: "Author",
     timeframe: "2025 to present",
-    tags: ["Open source", "Java", "WPILib", "Simulation"],
+    tags: ["Open source", "Java", "WPILib", "PID tuning"],
     links: [],
     featured: false,
     cover: cover("sim-sandbox", "sim-sandbox simulation of an FRC mechanism"),
