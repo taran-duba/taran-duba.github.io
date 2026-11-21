@@ -11,7 +11,7 @@ grep -n "TODO" content/*.ts
 ```
 
 Filled in from the resume (v6) and public repos: school, class year, email, GitHub, LinkedIn, BSP and
-YETI timeframes and details, sim-sandbox, Polar Edge, Clairify, Permafrost, Lineweave, leadership rows,
+YETI timeframes and details, sim-sandbox, Clairify, Permafrost, Lineweave, leadership rows,
 and most honors.
 
 ## Resume PDF (`content/site.ts`, `public/resume.pdf`)
