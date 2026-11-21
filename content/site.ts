@@ -25,7 +25,7 @@ export const siteConfig = {
   intro:
     "From robot localization systems to browser-based coding tools, I like building software that solves real problems. I founded Byte-Sized Python to make programming education more accessible and lead programming and electrical at YETI Robotics, FRC Team 3506.",
   metaDescription:
-    "Taran Duba is a high school student in Charlotte, NC. He founded Byte-Sized Python, a 501(c)(3) that teaches Python to students who can’t afford paid classes, and he is controls manager for FRC Team 3506, overseeing programming and electrical.",
+    "Taran Duba is a high school student in Charlotte, NC. Founder of Byte-Sized Python, a 501(c)(3) that teaches Python, and controls manager for FRC Team 3506.",
 
   location: "Charlotte, NC",
   school: "Providence High School",
