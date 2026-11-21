@@ -11,7 +11,7 @@ import type { Metadata } from "next";
 import { socialMeta } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: { absolute: `${siteConfig.name}: ${siteConfig.descriptor}` },
+  title: { absolute: `${siteConfig.name} | Portfolio` },
   ...socialMeta({ title: siteConfig.name, description: siteConfig.metaDescription, path: "/" }),
 };
 
