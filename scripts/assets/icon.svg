@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    rect { fill: #16202e; }
+    text { fill: #f4efe6; }
+    circle { fill: #8fc3ee; }
+    @media (prefers-color-scheme: dark) {
+      rect { fill: #f2ede3; }
+      text { fill: #0e1520; }
+      circle { fill: #1b5e9b; }
+    }
+  </style>
+  <rect width="64" height="64" rx="8"/>
+  <text x="29" y="46" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700">T</text>
+  <circle cx="47" cy="43" r="4.5"/>
+</svg>
