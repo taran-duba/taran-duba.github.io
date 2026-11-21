@@ -37,7 +37,7 @@ Screenshots are in for Byte-Sized Python, Koda Studio, Aid Compass, Lunaris360, 
 Permafrost, and Lineweave (taken from the live sites; FileAtlas is a demo project built by hand in the
 local no-login mode). Still missing, each `src` is `TODO` in `content/projects.ts`:
 
-- YETI Robotics cover and its two gallery slots (robot photos).
+- Two YETI Robotics gallery photos (the cover photo is in, but it is low resolution, about 650px wide, so a larger original would look sharper).
 - sim-sandbox cover (needs a screen capture of the simulator running on your machine).
 - BSP Stats screenshot for the second Byte-Sized Python gallery slot.
 - Both case study diagrams.

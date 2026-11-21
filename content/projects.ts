@@ -155,7 +155,13 @@ export const projects: Project[] = [
       { label: "yetirobotics.org", href: "https://yetirobotics.org" },
     ],
     featured: true,
-    cover: cover("YETI Robotics robot", "YETI Robotics robot on the field"),
+    cover: {
+      src: "/images/projects/yeti-robotics.webp",
+      alt: "YETI Robotics' robot, bumper number 3506, in a match while yellow game pieces fly across the field",
+      width: 653,
+      height: 408,
+      caption: "Photo: YETI Robotics (FRC 3506) in a match",
+    },
     href: "/projects/yeti-robotics/",
     caseStudy: {
       problem: {
