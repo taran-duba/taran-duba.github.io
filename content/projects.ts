@@ -85,7 +85,7 @@ export const projects: Project[] = [
       built: {
         paragraphs: [
           "I founded Byte-Sized Python and lead it as president and tech lead. That means running the teaching program and building the software it depends on.",
-          "In summer 2025 I was also head instructor. I designed a five-day Python curriculum with more than 40 exercises and take-home reference materials, and taught it to over 70 students.",
+          "In summer 2025, I was also head instructor. I designed a five-day Python curriculum with more than 40 exercises and take-home reference materials, and taught it to over 70 students.",
           "TODO: officer team size and how the team is organized.",
         ],
         bullets: [
@@ -101,7 +101,6 @@ export const projects: Project[] = [
           "Partnerships carry the curriculum further than we could alone:",
         ],
         bullets: [
-          { term: "eVidyaloka", detail: "Translating the curriculum into Hindi, Telugu, and Tamil." },
           { term: "HTI x AA8", detail: "Delivering Koda Studio and digital literacy in rural North Carolina." },
           { term: "Title I schools", detail: "Outreach to Charlotte-Mecklenburg Schools Title I summer camps, and an expansion into Title I schools that adds robotics and AI literacy." },
         ],
@@ -133,9 +132,9 @@ export const projects: Project[] = [
   },
   {
     slug: "yeti-robotics",
-    title: "YETI Robotics controls",
+    title: "YETI Robotics Controls Team",
     kind: "FRC Team 3506",
-    summary: "Managing programming and electrical, and leading a 15-person programming subteam, on a team that won its division at the 2026 FIRST World Championship.",
+    summary: "Managing programming and electrical, and leading a 30-person subteam on a team that won its division at the 2026 FIRST World Championship.",
     role: "Controls Manager (programming and electrical)",
     timeframe: "Fall 2024 to present",
     tags: ["FRC", "Java", "WPILib", "Computer vision", "Controls", "Electrical"],
@@ -150,7 +149,7 @@ export const projects: Project[] = [
       problem: {
         paragraphs: [
           "An FRC robot has to know where it is on the field, aim and shoot accurately from anywhere, and keep doing all of it through a full match without its battery voltage sagging into a brownout.",
-          "As controls manager I run both programming and electrical, and I lead the 15-person programming subteam, so the work is as much about splitting problems up and reviewing code as writing it. Build season runs more than 21 hours a week, and I put in over 600 hours a year alongside a full course load.",
+          "As controls manager, I run both programming and electrical, and I lead the 15-person programming subteam, so the work is as much about splitting problems up and reviewing code as writing it. Build season runs more than 21 hours a week, and I put in over 600 hours a year alongside a full course load.",
         ],
       },
       built: {
