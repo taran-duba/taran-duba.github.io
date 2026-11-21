@@ -157,7 +157,7 @@ export const projects: Project[] = [
     featured: true,
     cover: {
       src: "/images/projects/yeti-robotics.webp",
-      alt: "YETI Robotics' robot, bumper number 3506, in a match while yellow game pieces fly across the field",
+      alt: "YETI Robotics' robot, bumper number 3506, on the field surrounded by yellow game pieces",
       width: 653,
       height: 408,
       caption: "Photo: YETI Robotics (FRC 3506) in a match",
@@ -217,7 +217,7 @@ export const projects: Project[] = [
       },
       callout: { text: "Our autonomous routines added about 50 points a match.", attribution: "YETI Robotics, FRC Team 3506" },
       gallery: [
-        { src: "TODO: gallery image", alt: "Robot lining up on an AprilTag", width: 1600, height: 1000, caption: "Photo: robot aligning with vision" },
+        { src: "/images/projects/yeti-robotics-alignment.webp", alt: "Yellow game pieces in the air over the field as the robot shoots at a target marked with AprilTags", width: 653, height: 408, caption: "Photo: auto-alignment in action" },
         { src: "TODO: gallery image", alt: "A simulated robot mechanism being tuned in sim-sandbox", width: 1600, height: 1000, caption: "Screenshot: sim-sandbox PID tuning" },
       ],
     },

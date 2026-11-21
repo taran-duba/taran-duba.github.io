@@ -52,10 +52,7 @@ function Portrait() {
   return (
     <div className="relative" aria-hidden="true">
       <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-sm border border-line" />
-      <div className="relative flex aspect-[4/5] w-full flex-col justify-between rounded-sm bg-surface p-5">
-        <span className="label text-muted">
-          <TodoMark hint="headshot (see README)" />
-        </span>
+      <div className="relative flex aspect-[4/5] w-full flex-col justify-end rounded-sm bg-surface p-5">
         <span className="font-display text-[clamp(5rem,9vw,8rem)] leading-none tracking-tight text-ink">
           {shortName}
           <span className="text-accent">.</span>
