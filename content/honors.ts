@@ -41,7 +41,7 @@ export const honors: Honor[] = [
     context: "District event, YETI Robotics (FRC 3506)",
   },
   {
-    award: "greenCode Hackathon winner",
+    award: "Greencode Hackathon winner",
     holder: "Team",
     level: "Regional",
     year: "2026",
