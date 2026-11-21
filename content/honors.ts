@@ -75,7 +75,7 @@ export const honors: Honor[] = [
     context: "Future Problem Solving Program International, Global Issues Problem Solving",
   },
   {
-    award: "2nd place, NC State Tournament (Elementary)",
+    award: "2nd place, NC State Tournament",
     holder: "Team",
     level: "State",
     year: "2023",
