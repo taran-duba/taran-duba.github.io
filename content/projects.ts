@@ -139,8 +139,8 @@ export const projects: Project[] = [
     timeframe: "Fall 2024 to present",
     tags: ["FRC", "Java", "WPILib", "Computer vision", "Controls", "Electrical"],
     links: [
-      { label: "sim-sandbox on GitHub", href: "https://github.com/yeti-robotics/sim-sandbox" },
-      { label: "MapleSim port for WPILib 2027", href: "https://github.com/yeti-robotics/maple-sim-2027-alpha2" },
+      { label: "YETI Robotics on GitHub", href: "https://github.com/yeti-robotics" },
+      { label: "yetirobotics.org", href: "https://yetirobotics.org" },
     ],
     featured: true,
     cover: cover("YETI Robotics robot", "YETI Robotics robot on the field"),
